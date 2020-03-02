@@ -36,6 +36,10 @@ labelUserEl.id="label_user"
 labelUserEl.innerText="Usuário: "
 divUserEl.appendChild(labelUserEl)
 /*APLICAR TAG BR AQUI PARA SALTAR */
+var pularUserEl =document.createElement("br")
+pularUserEl.id="pular_user"
+divUserEl.appendChild(pularUserEl)
+
 var loginEl = document.createElement("input")
 loginEl.id="input_login"
 loginEl.setAttribute("type", "Text")
@@ -51,6 +55,10 @@ labelSenhaEl.id="label_senha"
 labelSenhaEl.innerText="Senha: "
 divSenhaEl.appendChild(labelSenhaEl)
 /*APLICAR TAG BR AQUI PARA SALTAR */
+var pularSenhaEl = document.createElement("br")
+pularSenhaEl.id="pular_senha"
+divSenhaEl.appendChild(pularSenhaEl)
+
 var senhaEl = document.createElement("input")
 senhaEl.id="input_senha"
 senhaEl.setAttribute("type", "password")
@@ -67,6 +75,7 @@ checkboxEl.setAttribute("type", "checkbox")
 divCheckEl.appendChild(checkboxEl)
 
 var labelCheckbox = document.createElement("label")
+//labelCheckbox.document.setAttribute("for", "checkbox_logado")
 labelCheckbox.id="label_checkbox"
 labelCheckbox.innerText="Continuar Logado"
 divCheckEl.appendChild(labelCheckbox)
