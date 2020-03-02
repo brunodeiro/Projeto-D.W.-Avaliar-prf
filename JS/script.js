@@ -22,7 +22,7 @@ divFormEl.appendChild(formEl)
 
 var logoEl = document.createElement("img")
 logoEl.id="logo"
-logoEl.src="img/sesi-logo-1.png"
+logoEl.src="IMG/sesi-logo-1.png"
 logoEl.setAttribute("width", "200px")
 logoEl.setAttribute("height", "80px")
 divHeaderEl.appendChild(logoEl)
@@ -35,7 +35,7 @@ var labelUserEl = document.createElement("label")
 labelUserEl.id="label_user"
 labelUserEl.innerText="Usuário: "
 divUserEl.appendChild(labelUserEl)
-
+/*APLICAR TAG BR AQUI PARA SALTAR */
 var loginEl = document.createElement("input")
 loginEl.id="input_login"
 loginEl.setAttribute("type", "Text")
@@ -50,7 +50,7 @@ var  labelSenhaEl = document.createElement("label")
 labelSenhaEl.id="label_senha"
 labelSenhaEl.innerText="Senha: "
 divSenhaEl.appendChild(labelSenhaEl)
-
+/*APLICAR TAG BR AQUI PARA SALTAR */
 var senhaEl = document.createElement("input")
 senhaEl.id="input_senha"
 senhaEl.setAttribute("type", "password")

@@ -21,6 +21,7 @@ footer{
     padding: 30px;
     font-family: helvetica;
     color: aliceblue;
+    clear: both;
 
 }
 
@@ -28,3 +29,60 @@ footer{
     color: black;
     text-decoration: none;
 }
+
+#divForm{
+    margin-left: 30px ;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    background-color: aliceblue;
+    float: left;
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px;
+    padding: 30px;
+    width: auto;
+    height: auto;
+}
+
+#form{
+    margin: auto;
+    background-color: white; /*REMOVER APÓS ORGANIZAR */
+
+}
+
+label{
+    text-align: left;
+    display: inline-block;
+    width: 60px;    
+}
+
+#input_login{
+    border-radius: 3px;
+    border: 1px solid rgba(209, 228, 245, 0.664);
+    width: 150px;
+    margin: 10px;
+}
+
+#input_senha{
+    border-radius: 3px;
+    border: 1px solid rgba(209, 228, 245, 0.664);
+    width: 150px;
+    margin: 10px;
+}
+
+
+button{
+    float: right;
+    background-color: rgb(25, 74, 134);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#checkbox_logado{
+    
+}
+
+
+
+
