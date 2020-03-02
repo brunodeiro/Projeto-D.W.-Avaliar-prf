@@ -39,8 +39,8 @@ footer{
     border: 1px solid rgb(48, 132, 206);
     border-radius: 4px;
     padding: 30px;
-    width: auto;
-    height: auto;
+    width: 300px;
+    height: 327px;
 }
 
 #form{
@@ -53,20 +53,25 @@ label{
     text-align: left;
     display: inline-block;
     width: 60px;    
+    
 }
 
 #input_login{
     border-radius: 3px;
     border: 1px solid rgba(209, 228, 245, 0.664);
     width: 150px;
-    margin: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 #input_senha{
     border-radius: 3px;
     border: 1px solid rgba(209, 228, 245, 0.664);
     width: 150px;
-    margin: 10px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 
