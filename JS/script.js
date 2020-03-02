@@ -20,4 +20,9 @@ formEl.setAttribute("method", "post")
 formEl.id="form"
 divFormEl.appendChild(formEl)
 
-var
+var logoEl = document.createElement("img")
+logoEl.id="logo"
+logoEl.src="img/sesi-logo-1.png"
+logoEl.setAttribute("width", "200px")
+logoEl.setAttribute("height", "80px")
+header.appendChild(logoEl)
