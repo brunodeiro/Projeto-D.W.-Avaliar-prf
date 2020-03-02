@@ -20,3 +20,4 @@ formEl.setAttribute("method", "post")
 formEl.id="form"
 divFormEl.appendChild(formEl)
 
+var
