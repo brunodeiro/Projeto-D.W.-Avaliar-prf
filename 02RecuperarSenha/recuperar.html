@@ -11,38 +11,27 @@
         </div>
         <div id="texto">
             <font face="verdana" color=#000000>Recuperação de Senha</font>
-            <hr width="45%">
+            <hr width="25%">
         </div>
-        <div id="caixa">
-            <form id="form">
-                <div id="usuario">
-                    <label for="">Usuário</label>
-                    <input type="text" placeholder="Digite Seu o nome do Usuário">
-                </div>
-                <div id="email">
-                    <label for="">E-mail</label>
-                    <input type="text" placeholder="Digite seu E-mail">
-                </div>
-                <div>
-                    <input type="button" name="enviar" id="enviar" value="Enviar" onclick="redirecionar()">
-                </div>
-                <div>
-                    <input type="button" name="cancelar" id="cancelar" value="Cancelar" onclick="login()">
-                </div>
-            </form>
-        </div>
-        <div id="footer">
-            <p>SESI | Direitos reservados</p>
-        </div>
-
-        <script>
-          function login(){
-            window.location.href = "index.html"
-          }
-          function redirecionar(){
-              alert("Solicitação enviada! Verifique seu E-mail.")
-              window.location.href = "index.html"
-          }
-        </script>
+            <div id="caixa">
+                <form id="form">
+                    <div id="usuario">
+                        <label for="">Usuário</label>
+                        <input type="text" placeholder="Digite Seu o nome do Usuário">
+                    </div>
+                    <div id="email">
+                        <label for="">E-mail</label>
+                        <input type="text" placeholder="Digite seu E-mail">
+                    </div>
+                    <div>
+                        <input type="button" name="enviar" id="enviar" value="Enviar" onclick="redirecionar()">
+                    </div>
+                    <div>
+                        <input type="button" name="cancelar" id="cancelar" value="Cancelar" onclick="login()">
+                    </div>
+                </form>
+            </div>
+        <footer>SESI | Direitos reservados</footer>
+      <script src="js/recuperar.js"></script>
     </body>
 </html>
