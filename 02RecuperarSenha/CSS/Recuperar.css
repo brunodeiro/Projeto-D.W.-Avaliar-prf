@@ -31,11 +31,13 @@ img{
 }
 
 #caixa{
-    margin-left: 30px ;
-    margin-top: 10%;
-    margin-bottom: 15%;
+    margin-top:-90px;
+    margin-left:-175px; 
+    border:2px #ccc solid;
+    position: absolute;
+    top:50%;
+    left:50%;
     background-color: aliceblue;
-    float: left;
     border: 1px solid rgb(48, 132, 206);
     border-radius: 4px;
     padding: 30px;
@@ -70,12 +72,12 @@ label{
 }
 
 
-button{
+#enviar{
     float: right;
     background-color: rgb(25, 74, 134);
     color: white;
     font-weight: bold;
-    border-radius: 3px;
+    border-radius: 5px;
     padding: 5px;
 }
 
