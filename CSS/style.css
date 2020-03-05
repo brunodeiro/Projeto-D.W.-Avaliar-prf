@@ -44,8 +44,11 @@ footer{
 }
 
 #form{
-    margin: auto;
-    background-color: white; /*REMOVER APÓS ORGANIZAR */
+    margin: 0 0 0 0 ;
+    background-color: aliceblue; /*REMOVER APÓS ORGANIZAR */
+    padding: 30px 0px 30px;
+    width: 297px;
+    height: 282px;
 
 }
 
@@ -53,13 +56,14 @@ label{
     text-align: left;
     display: inline-block;
     width: 60px;    
+    font-size: 16px;
     
 }
 
 #input_login{
     border-radius: 3px;
     border: 1px solid rgba(209, 228, 245, 0.664);
-    width: 150px;
+    width: 294px;
     height: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -68,7 +72,7 @@ label{
 #input_senha{
     border-radius: 3px;
     border: 1px solid rgba(209, 228, 245, 0.664);
-    width: 150px;
+    width: 294px;
     height: 30px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -81,13 +85,23 @@ button{
     color: white;
     font-weight: bold;
     border-radius: 3px;
-    padding: 5px;
+    padding: 15px;
 }
 
-#checkbox_logado{
-    
+#manter_logado{
+    background-color: aliceblue;
+    /* padding: 5px; */
 }
 
+#esqueci_senha{
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
 
-
+#label_checkbox{
+    background-color: aliceblue;
+    float: left;
+    width: 120px;
+    font-size: 14px;
+}
 

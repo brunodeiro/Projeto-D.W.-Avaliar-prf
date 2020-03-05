@@ -69,16 +69,18 @@ var divCheckEl = document.createElement("div")
 divCheckEl.id="manter_logado"
 formEl.appendChild(divCheckEl)
 
-var checkboxEl = document.createElement("input")
-checkboxEl.id="checkbox_logado"
-checkboxEl.setAttribute("type", "checkbox")
-divCheckEl.appendChild(checkboxEl)
+
 
 var labelCheckbox = document.createElement("label")
 //labelCheckbox.document.setAttribute("for", "checkbox_logado")
 labelCheckbox.id="label_checkbox"
 labelCheckbox.innerText="Continuar Logado"
 divCheckEl.appendChild(labelCheckbox)
+
+var checkboxEl = document.createElement("input")
+checkboxEl.id="checkbox_logado"
+checkboxEl.setAttribute("type", "checkbox")
+divCheckEl.appendChild(checkboxEl)
 
 var divEsqueciSenhaEl = document.createElement("div")
 divEsqueciSenhaEl.id="esqueci_senha"
