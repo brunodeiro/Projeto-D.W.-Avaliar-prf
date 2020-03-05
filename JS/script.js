@@ -104,6 +104,7 @@ divBtn.appendChild(entrarEl)
 
 function checarLogin(){
     if ((useradmin===input_login.value) && (usersenha===input_senha.value)){
+        // window.location.href="https://www.youtube.com/"
         alert("Olá " + input_login.value + " Seja bem vindo !")
         // DIRECIONAR PARA A TELA DE MENU
     }
