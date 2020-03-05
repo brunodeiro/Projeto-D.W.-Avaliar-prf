@@ -14,11 +14,11 @@ var divFormEl = document.createElement("div")
 divFormEl.id="divForm"
 menu.appendChild(divFormEl)
 
-var formEl = document.createElement("form")
-formEl.setAttribute("action", "formulario.php")
-formEl.setAttribute("method", "post")
-formEl.id="form"
-divFormEl.appendChild(formEl)
+// var formEl = document.createElement("form")
+// // formEl.setAttribute("action", "formulario.php")
+// formEl.setAttribute("method", "post")
+// formEl.id="form"
+// divFormEl.appendChild(formEl)
 
 var logoEl = document.createElement("img")
 logoEl.id="logo"
@@ -29,7 +29,7 @@ divHeaderEl.appendChild(logoEl)
 
 var divUserEl = document.createElement("div")
 divUserEl.id="usuario"
-formEl.appendChild(divUserEl)
+divFormEl.appendChild(divUserEl)
 
 var labelUserEl = document.createElement("label")
 labelUserEl.id="label_user"
@@ -48,7 +48,7 @@ divUserEl.appendChild(loginEl)
 
 var divSenhaEl =document.createElement("div")
 divSenhaEl.id="senha"
-formEl.appendChild(divSenhaEl)
+divFormEl.appendChild(divSenhaEl)
 
 var  labelSenhaEl = document.createElement("label")
 labelSenhaEl.id="label_senha"
@@ -67,7 +67,7 @@ divSenhaEl.appendChild(senhaEl)
 
 var divCheckEl = document.createElement("div")
 divCheckEl.id="manter_logado"
-formEl.appendChild(divCheckEl)
+divFormEl.appendChild(divCheckEl)
 
 
 
@@ -84,7 +84,7 @@ divCheckEl.appendChild(checkboxEl)
 
 var divEsqueciSenhaEl = document.createElement("div")
 divEsqueciSenhaEl.id="esqueci_senha"
-formEl.appendChild(divEsqueciSenhaEl)
+divFormEl.appendChild(divEsqueciSenhaEl)
 
 var esqueciSenha = document.createElement("a")
 esqueciSenha.id="esqueci_senha_link"
@@ -94,7 +94,7 @@ divEsqueciSenhaEl.appendChild(esqueciSenha)
 
 var divBtn = document.createElement("div")
 divBtn.id="entrar"
-formEl.appendChild(divBtn)
+divFormEl.appendChild(divBtn)
 
 var entrarEl = document.createElement("button")
 entrarEl.id="botao_entrar"
@@ -104,12 +104,13 @@ divBtn.appendChild(entrarEl)
 
 function checarLogin(){
     if ((useradmin===input_login.value) && (usersenha===input_senha.value)){
-        // window.location.href="https://www.youtube.com/"
         alert("Olá " + input_login.value + " Seja bem vindo !")
+        window.location.href="menu.html"    
         // DIRECIONAR PARA A TELA DE MENU
     }
     else{
         alert("Login ou senha incorreto !")
+        window.location.href="index.html"
         //RETORNAR PARA A TELA DE LOGIN
     }
  
