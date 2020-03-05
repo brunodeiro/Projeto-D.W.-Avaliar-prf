@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Recuperar</title>
+        <link rel="stylesheet" href="CSS/Recuperar.css">
+    </head>
+    <body>
+        <div id="header">
+           <img src="IMG/sesi-logo-1.png">
+        </div>
+        <div id="texto">
+            <font face="verdana" color=#000000>Recuperação de Senha</font>
+            <hr width="45%">
+        </div>
+        <div id="caixa">
+            <form id="form">
+                <div id="usuario">
+                    <label for="">Usuário</label>
+                    <input type="text" placeholder="Digite Seu o nome do Usuário">
+                </div>
+                <div id="email">
+                    <label for="">E-mail</label>
+                    <input type="text" placeholder="Digite seu E-mail">
+                </div>
+                <div id="enviar">
+                    <button onclick="alert('Solicitação enviada! Verifique seu E-mail.')">Enviar</button>
+                </div>
+                <div>
+                    <input type="button" name="cancelar" id="cancelar" value="Cancelar" onclick="login()">
+                </div>
+            </form>
+        </div>
+        <div id="footer">
+            <p>SESI | Direitos reservados</p>
+        </div>
+
+        <script>
+          function login(){
+            window.location.href = "index.html"
+          }
+        </script>
+    </body>
+</html>

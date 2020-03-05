@@ -1,0 +1,89 @@
+*{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    height: 80px;
+    padding: 20px;
+    background: rgb(47,104,187);
+    background: linear-gradient(90deg, rgba(47,104,187,1) 0%, rgba(33,109,221,1) 31%, rgba(23,92,175,1) 100%);
+}
+
+img{
+    width: 200px;
+    height: 100px;
+}
+
+#footer{
+    background: rgb(47,104,187);
+    background: linear-gradient(90deg, rgba(47,104,187,1) 0%, rgba(33,109,221,1) 31%, rgba(23,92,175,1) 100%);
+    height: 20px;
+    text-align: center;
+    padding: 30px;
+    font-family: helvetica;
+    color: aliceblue;
+    clear: both;
+
+}
+
+#caixa{
+    margin-left: 30px ;
+    margin-top: 10%;
+    margin-bottom: 15%;
+    background-color: aliceblue;
+    float: left;
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px;
+    padding: 30px;
+    width: 300px;
+    height: 200px;
+}
+
+
+label{
+    text-align: left;
+    display: inline-block;
+    width: 60px;    
+    
+}
+
+#usuario{
+    border-radius: 3px;
+    border: 1px solid rgba(209, 228, 245, 0.664);
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#email{
+    border-radius: 3px;
+    border: 1px solid rgba(209, 228, 245, 0.664);
+    width: 150px;
+    height: 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+button{
+    float: right;
+    background-color: rgb(25, 74, 134);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#cancelar{
+    float: right;
+    background-color: rgb(209, 38, 38);
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 5px;
+}
