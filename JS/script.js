@@ -75,6 +75,7 @@ var labelCheckbox = document.createElement("label")
 //labelCheckbox.document.setAttribute("for", "checkbox_logado")
 labelCheckbox.id="label_checkbox"
 labelCheckbox.innerText="Continuar Logado"
+labelCheckbox.setAttribute("onclick", "clicar()")
 divCheckEl.appendChild(labelCheckbox)
 
 var checkboxEl = document.createElement("input")
@@ -120,3 +121,8 @@ function checarLogin(){
  //Exemplo de dados
 useradmin='admin'
 usersenha='admin'
+
+
+function clicar(){
+    checkboxEl.checked=true
+}    
