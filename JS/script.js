@@ -14,12 +14,6 @@ var divFormEl = document.createElement("div")
 divFormEl.id="divForm"
 menu.appendChild(divFormEl)
 
-// var formEl = document.createElement("form")
-// // formEl.setAttribute("action", "formulario.php")
-// formEl.setAttribute("method", "post")
-// formEl.id="form"
-// divFormEl.appendChild(formEl)
-
 var logoEl = document.createElement("img")
 logoEl.id="logo"
 logoEl.src="IMG/sesi-logo-1.png"
@@ -72,7 +66,6 @@ divFormEl.appendChild(divCheckEl)
 
 
 var labelCheckbox = document.createElement("label")
-//labelCheckbox.document.setAttribute("for", "checkbox_logado")
 labelCheckbox.id="label_checkbox"
 labelCheckbox.innerText="Continuar Logado"
 labelCheckbox.setAttribute("onclick", "clicar()")
@@ -126,4 +119,5 @@ usersenha='admin'
 
 function clicar(){
     checkboxEl.checked=true
+    //CHECKBOX É MARCADO AO CLICAR NO "MANTER LOGADO"
 }    
