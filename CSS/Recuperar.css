@@ -13,10 +13,6 @@
     background: linear-gradient(90deg, rgba(47,104,187,1) 0%, rgba(33,109,221,1) 31%, rgba(23,92,175,1) 100%);
 }
 
-img{
-    width: 200px;
-    height: 100px;
-}
 
 footer{       
     margin-top: auto;
@@ -30,6 +26,11 @@ footer{
     clear: both;
     margin-top: auto;
 
+}
+
+img{
+    width: 200px;
+    height: 100px;
 }
 
 html{
@@ -92,7 +93,12 @@ label{
     font-weight: bold;
     border-radius: 5px;
     padding: 5px;
+    margin-top: 30px;
 }
+
+#texto{margin-top: 95px;}
+
+#linha{margin-left: 10px;}
 
 #cancelar{
     float: right;
@@ -101,4 +107,6 @@ label{
     font-weight: bold;
     border-radius: 3px;
     padding: 5px;
+    margin-top: 30px;
+    margin-right: 170px;
 }
