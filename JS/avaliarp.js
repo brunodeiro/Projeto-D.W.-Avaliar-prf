@@ -20,3 +20,7 @@ logoEl.src="IMG/sesi-logo-1.png"
 logoEl.setAttribute("width", "200px")
 logoEl.setAttribute("height", "80px")
 divHeaderEl.appendChild(logoEl)
+
+var divFiltro = document.createElement("div")
+divFiltro.id="div_filtro"
+divFormEl.appendChild(divFormEl)
