@@ -4,11 +4,28 @@
         <meta charset="UTF-8">
         <title>Recuperar</title>
         <link rel="stylesheet" href="CSS/Recuperar.css">
-    </head>
-    <body>
-        <div id="header">
-           <img src="IMG/sesi-logo-1.png">
-        </div>
+        <link rel="stylesheet" href="CSS/Acessibilidade.css">
+    <body class="fundo"> 
+        <header>
+            <div id="img">
+                <img src="IMG/sesi-logo-1.png">
+            </div>
+           <div id="link">
+                <a href="Index.html">Ir Para Login[1]</a>
+            </div>
+            <div class="btn-container">
+                <label for="">Fonte:</label>
+                <button  id="aumentar" title="Aumentar fonte">A+</button>
+                <button  id="diminuir" title="Diminuir fonte">A-</button>
+            </div>
+            <div id="contraste">
+                <label for="">Contraste:</label>
+                <input type="radio" id="branco" name="contraste" onclick="mudarContraste(this)" value="Marron">
+                <label for="Branco">Normal</label>
+                <input type="radio" id="marron" name="contraste" onclick="mudarContraste(this)" value="Branco">
+                <label for="Marron">Preto</label>
+            </div>
+        </header>
         <div id="texto" align='center'>
             <h2>Recuperação de Senha</h2>
             <hr width="25%" id="linha">
@@ -33,5 +50,6 @@
             </div>
         <footer>SESI | Direitos reservados</footer>
       <script src="js/recuperar.js"></script>
+      <script type="text/javascript" src="js/Acessibilidade.js"></script>
     </body>
 </html>
