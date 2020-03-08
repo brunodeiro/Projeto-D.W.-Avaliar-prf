@@ -22,7 +22,7 @@ var logoEl = document.createElement("img")
     divHeaderEl.appendChild(logoEl)
 
 var divFiltro = document.createElement("div")
-    divFiltro.id="div_filtro"
+    divFiltro.id="divFiltro"
     divFormEl.appendChild(divFiltro)
 
 var labelFiltro = document.createElement("label")
@@ -34,12 +34,84 @@ var divBtn = document.createElement("div")
     divBtn.id="divBtn"
     divFiltro.appendChild(divBtn)
 
-var avaliarP = document.createElement("button")
+var avaliarP = document.createElement("button") //DEIXAR ESTE SELECIONADO
     avaliarP.id="avaliarP"
     avaliarP.innerText="Professor"
     divBtn.appendChild(avaliarP)
 
-var avaliarM = document.createElement("button")
+var avaliarM = document.createElement("button") //DIRECIONAR PARA A PAGINA AVALIARMATERIA.HTML
     avaliarM.id="avaliarM"
     avaliarM.innerText="Matéria"
     divBtn.appendChild(avaliarM)    
+
+var divNome = document.createElement("div")
+    divNome.id="divNome"
+    divFormEl.appendChild(divNome)    
+
+var labelNome = document.createElement("label")
+    labelNome.id="labelFiltro"
+    labelNome.innerText="Nome:"
+    divNome.appendChild(labelNome)     
+
+var inputNome =document.createElement("input")
+    inputNome.id="inputNome"
+    inputNome.setAttribute("type", "text")
+    inputNome.setAttribute("placeholder", "Digite o nome do professor")    
+    divNome.appendChild(inputNome)
+
+var btnNome = document.createElement("button") //SIMULAR PESQUISA DO NOME (DAVID LINS).. NÃO PRECISA PREENCHER CAMPO, POIS NÃO TEMOS UM BANCO DE DADOS 
+    btnNome.id="btnNome"
+    // btnNome.html
+    btnNome.setAttribute("class", "fa fa-search")
+    divNome.appendChild(btnNome)
+
+var imgP=document.createElement("div") //SETAR ATRIBUTO DE IMAGEM PARA QUE AO PESQUISAR (DAVID LINS NO [btnNome]) APAREÇA SUA FOTO
+    imgP.id="imgP"
+    divFormEl.appendChild(imgP)
+
+var divMateria=document.createElement("div")
+    divMateria.id="divMateria"
+    divFormEl.appendChild(divMateria)
+
+var labelMateria=document.createElement("label")
+    labelMateria.id="labelMateria"
+    labelMateria.innerText="Matérias:"
+    divMateria.appendChild(labelMateria)
+
+var divBtnMateria=document.createElement("div")    
+    divBtnMateria.id="divBtnMateria"
+    divMateria.appendChild(divBtnMateria)
+//CRIAR FUNÇÃO PARA SELECIONAR APENAS UMA DAS 3 MATERIAS
+var labelRadio1=document.createElement("label")
+    labelRadio1.id="labelRadio1"
+    labelRadio1.innerText="Materia 01"
+    divBtnMateria.appendChild(labelRadio1)
+
+var inputRadio1=document.createElement("input")
+    inputRadio1.id="inputRadio1"
+    inputRadio1.setAttribute("type", "radio")
+    labelRadio1.appendChild(inputRadio1)
+
+//CLONE2
+
+var labelRadio2=document.createElement("label")
+    labelRadio2.id="labelRadio2"
+    labelRadio2.innerText="Materia 02"
+    divBtnMateria.appendChild(labelRadio2)
+
+var inputRadio2=document.createElement("input")
+    inputRadio2.id="inputRadio2"
+    inputRadio2.setAttribute("type", "radio")
+    labelRadio2.appendChild(inputRadio2)
+
+//CLONE3
+
+var labelRadio3=document.createElement("label")
+    labelRadio3.id="labelRadio3"
+    labelRadio3.innerText="Materia 03"
+    divBtnMateria.appendChild(labelRadio3)
+
+var inputRadio3=document.createElement("input")
+    inputRadio3.id="inputRadio3"
+    inputRadio3.setAttribute("type", "radio")
+    labelRadio3.appendChild(inputRadio3)
