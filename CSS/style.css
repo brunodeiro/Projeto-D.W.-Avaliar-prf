@@ -103,14 +103,9 @@ button{
 #label_checkbox{
     background-color: aliceblue;
     float: left;
-    width: 170px;
+    width: 140px;
     height: 30px;
     font-size: 14px;
-}
-
-#divChk{
-    background-color: blueviolet;
-    float: right;
 }
 
 #label_user{
