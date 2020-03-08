@@ -89,6 +89,7 @@ var labelRadio1=document.createElement("label")
 
 var inputRadio1=document.createElement("input")
     inputRadio1.id="inputRadio1"
+    inputRadio1.name="materia"
     inputRadio1.setAttribute("type", "radio")
     labelRadio1.appendChild(inputRadio1)
 
@@ -101,6 +102,7 @@ var labelRadio2=document.createElement("label")
 
 var inputRadio2=document.createElement("input")
     inputRadio2.id="inputRadio2"
+    inputRadio2.name="materia"
     inputRadio2.setAttribute("type", "radio")
     labelRadio2.appendChild(inputRadio2)
 
@@ -113,5 +115,7 @@ var labelRadio3=document.createElement("label")
 
 var inputRadio3=document.createElement("input")
     inputRadio3.id="inputRadio3"
+    inputRadio3.name="materia"
     inputRadio3.setAttribute("type", "radio")
     labelRadio3.appendChild(inputRadio3)
+
