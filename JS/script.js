@@ -63,18 +63,21 @@ var divCheckEl = document.createElement("div")
 divCheckEl.id="manter_logado"
 divFormEl.appendChild(divCheckEl)
 
+//AQUIIIIIIIIIIIIIIIIIIIIIIIIII
+
+
 
 
 var labelCheckbox = document.createElement("label")
 labelCheckbox.id="label_checkbox"
-labelCheckbox.innerText="Continuar Logado"
-labelCheckbox.setAttribute("onclick", "clicar()")
+labelCheckbox.innerText="Continuar Logado   "
+// labelCheckbox.setAttribute("onclick", "clicar()")
 divCheckEl.appendChild(labelCheckbox)
 
 var checkboxEl = document.createElement("input")
 checkboxEl.id="checkbox_logado"
 checkboxEl.setAttribute("type", "checkbox")
-divCheckEl.appendChild(checkboxEl)
+labelCheckbox.appendChild(checkboxEl)
 
 var divEsqueciSenhaEl = document.createElement("div")
 divEsqueciSenhaEl.id="esqueci_senha"
@@ -117,7 +120,7 @@ usersenha='admin'
 
 
 
-function clicar(){
-    checkboxEl.checked=true
-    //CHECKBOX É MARCADO AO CLICAR NO "MANTER LOGADO"
-}    
+// function clicar(){
+//     checkboxEl.checked=true
+//     //CHECKBOX É MARCADO AO CLICAR NO "MANTER LOGADO"
+// }    
