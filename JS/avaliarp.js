@@ -23,7 +23,7 @@ var logoEl = document.createElement("img")
 
 var divFiltro = document.createElement("div")
     divFiltro.id="div_filtro"
-    divFormEl.appendChild(divFormEl)
+    divFormEl.appendChild(divFiltro)
 
 var labelFiltro = document.createElement("label")
     labelFiltro.id="labelFiltro"
