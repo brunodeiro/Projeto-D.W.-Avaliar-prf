@@ -13,22 +13,22 @@
            <div id="link">
                 <a href="Index.html">Ir Para Login[1]</a>
             </div>
-            <div class="btn-container">
-                <label for="">Fonte:</label>
-                <button  id="aumentar" title="Aumentar fonte">A+</button>
-                <button  id="diminuir" title="Diminuir fonte">A-</button>
-            </div>
-            <div id="contraste">
-                <label for="">Contraste:</label>
-                <input type="radio" id="branco" name="contraste" onclick="mudarContraste(this)" value="Marron">
-                <label for="Branco">Normal</label>
-                <input type="radio" id="marron" name="contraste" onclick="mudarContraste(this)" value="Branco">
-                <label for="Marron">Preto</label>
-            </div>
+                <div class="btn-container">
+                    <label class='fonte' for="">Fonte:</label>
+                    <button  id="aumentar" title="Aumentar fonte">A+</button>
+                    <button  id="diminuir" title="Diminuir fonte">A-</button>
+                </div>
+                <div id="contraste">    
+                    <label class='contraste' for="" >Contraste:</label>
+                    <input type="radio" id="branco" name="contraste" onclick="mudarContraste(this)" value="Preto">
+                    <label for="Branco">Normal</label>
+                    <input type="radio" id="marron" name="contraste" onclick="mudarContraste(this)" value="Branco">
+                    <label for="Marron">Escuro</label>
+                </div>
         </header>
         <div id="texto" align='center'>
-            <h2>Recuperação de Senha</h2>
-            <hr width="25%" id="linha">
+            <h3 id="titulo">Recuperação de Senha</h3>
+            <hr width="26%" id="linha">
         </div>
             <div id="caixa">
                 <form id="form">

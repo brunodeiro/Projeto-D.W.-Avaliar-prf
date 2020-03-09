@@ -22,10 +22,14 @@ window.onload = function() {
 
 function mudarContraste(contraste) {
     let bodyEl = document.querySelector('body')
+    let titulo = document.getElementById('titulo')
     if(contraste.value == 'Branco'){
+        titulo.style.color = 'white'
         bodyEl.className = 'fundo1'
+
     }
-    if(contraste.value == 'Marron'){
+    if(contraste.value == 'Preto'){
+        titulo.style.color = 'black'
         bodyEl.className = 'fundo'
     }
 }

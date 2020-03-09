@@ -3,10 +3,10 @@ header{
     padding: 20px;
     background: rgb(47,104,187);
     background: linear-gradient(90deg, rgba(47,104,187,1) 0%, rgba(33,109,221,1) 31%, rgba(23,92,175,1) 100%);
+    position: relative;
 }
 
-
-#aumentar{font-size:  ;}
+#aumentar{font-size:16px;}
 
 footer{       
     margin-top: auto;
@@ -18,7 +18,6 @@ footer{
     font-family: helvetica;
     color: aliceblue;
     clear: both;
-    margin-top: auto;
 
 }
 
@@ -79,6 +78,10 @@ label{
     margin-bottom: 20px;
 }
 
+#titulo{
+    margin-bottom: 3px;
+
+}
 
 #enviar{
     float: right;
@@ -90,9 +93,14 @@ label{
     margin-top: 30px;
 }
 
-#texto{margin-top: 95px;}
+#texto{
+    margin-top: 60px;
+}
 
-#linha{margin-left: 10px;}
+#linha{
+    margin-left: 32%px;
+    margin-top: auto;
+}
 
 #cancelar{
     float: right;
@@ -104,4 +112,40 @@ label{
     margin-top: 30px;
     margin-right: 170px;
     max-width: 100%;
+}
+
+#img{ 
+    width: 200px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#link{
+    position: absolute;
+    top: 5em;
+    margin-left: 13em;
+}
+
+.btn-container{
+    position: absolute;
+    top: 5em;
+    margin-left: 42em;
+    color: white;
+}
+
+#contraste{
+    position: absolute;
+    top: 5em;
+    margin-left: 23em;
+    color: white;
+}
+
+.fonte{font-weight: bold;}
+
+.contraste{
+    font-weight: bold;
+    margin-right: 0.5em;
 }
