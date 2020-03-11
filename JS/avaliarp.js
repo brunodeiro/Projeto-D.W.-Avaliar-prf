@@ -289,11 +289,11 @@ function opc(){
         labelRadio1.style.boxShadow="2px 2px rgb(60, 30, 194)"
         labelRadio2.style.backgroundColor="rgba(100, 148, 237, 0.616)"
         labelRadio2.style.color="black"
-        labelRadio2.style.boxShadow="transparent"
+        labelRadio2.style.boxShadow="unset"
         labelRadio3.style.backgroundColor="rgba(100, 148, 237, 0.616)"
         labelRadio3.style.color="black"
-        labelRadio3.style.boxShadow="transparent"
-        alert("A")//Verificador de teste
+        labelRadio3.style.boxShadow="unset"
+        // alert("A")//Verificador de teste
     }
     if(inputRadio2.checked==true){
         var materias="Materia B"
@@ -302,11 +302,11 @@ function opc(){
         labelRadio2.style.boxShadow="2px 2px rgb(60, 30, 194)"
         labelRadio1.style.backgroundColor="rgba(100, 148, 237, 0.616)"
         labelRadio1.style.color="black"
-        labelRadio1.style.boxShadow="transparent"
+        labelRadio1.style.boxShadow="unset"
         labelRadio3.style.backgroundColor="rgba(100, 148, 237, 0.616)"
         labelRadio3.style.color="black"
-        labelRadio3.style.boxShadow="transparent"
-        alert("B")//Verificador de teste
+        labelRadio3.style.boxShadow="unset"
+        // alert("B")//Verificador de teste
     }
     if(inputRadio3.checked==true){
         var materias="Materia C"
@@ -315,11 +315,11 @@ function opc(){
         labelRadio3.style.boxShadow="2px 2px rgb(60, 30, 194)"
         labelRadio2.style.backgroundColor="rgba(100, 148, 237, 0.616)"
         labelRadio2.style.color="black"
-        labelRadio2.style.boxShadow="transparent"
+        labelRadio2.style.boxShadow="unset"
         labelRadio1.style.backgroundColor="rgba(100, 148, 237, 0.616)"
         labelRadio1.style.color="black"
-        labelRadio1.style.boxShadow="transparent"
-        alert("C")//Verificador de teste
+        labelRadio1.style.boxShadow="unset"
+        // alert("C")//Verificador de teste
     }
     
 }
