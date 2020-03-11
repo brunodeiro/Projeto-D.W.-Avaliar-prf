@@ -349,8 +349,10 @@ function opc(){
 
 function enviar(){
     if(inputNome.value && txtArea.value && valor>=1 && (inputRadio1.checked || inputRadio2.checked || inputRadio3.checked) ){ 
-        confirm("Deseja enviar sua avaliação ?")
-        window.location.href="comentarios.html"
+        var confirmar = confirm("Deseja enviar sua avaliação ?")
+        if(confirmar==true){
+            window.location.href="comentarios.html"
+        }
     }
     else{
         alert("Preencha todos os campos!")
