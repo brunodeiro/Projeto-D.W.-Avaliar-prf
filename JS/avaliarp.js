@@ -37,11 +37,13 @@ var divBtn = document.createElement("div")
 var avaliarP = document.createElement("button") //DEIXAR ESTE SELECIONADO
     avaliarP.id="avaliarP"
     avaliarP.innerText="Professor"
+    avaliarP.disabled = true
     divBtn.appendChild(avaliarP)
 
 var avaliarM = document.createElement("button") //DIRECIONAR PARA A PAGINA AVALIARMATERIA.HTML
     avaliarM.id="avaliarM"
     avaliarM.innerText="Matéria"
+    avaliarM.setAttribute("onclick", "materia()")
     divBtn.appendChild(avaliarM)    
 
 var divNome = document.createElement("div")
@@ -148,6 +150,9 @@ labelAnon.appendChild(iconAnon)
 var txtArea = document.createElement("textarea") // usar resize: none no css para deixar fixo
 txtArea.id="txtArea"
 txtArea.setAttribute("placeholder", "Escreva aqui")
+txtArea.setAttribute("class", "fixo")
+txtArea.setAttribute("cols", "num")
+txtArea.setAttribute("rows", "num")
 txtArea.setAttribute("width", "250px")
 txtArea.setAttribute("heigth", "150px")
 divComent.appendChild(txtArea)
@@ -155,3 +160,69 @@ divComent.appendChild(txtArea)
 var divNota = document.createElement("div")
 divNota.id="divNota"
 divFormEl.appendChild(divNota)
+
+var labelNota = document.createElement("label")
+labelNota.id="labelNota"
+labelNota.innerText="Dê a sua nota !"
+divNota.appendChild(labelNota)
+
+var valor = 0
+
+var star1 = document.createElement("img")
+star1.id="star1"
+star1.src="IMG/star0.png"
+valor=1
+// star1.setAttribute("onclick", "avaliar()")
+divNota.appendChild(star1)
+
+var star2 = document.createElement("img")
+star2.id="star2"
+star2.src="IMG/star0.png"
+valor=2
+// star1.setAttribute("onclick", "avaliar()")
+divNota.appendChild(star2)
+
+var star3 = document.createElement("img")
+star3.id="star3"
+star3.src="IMG/star0.png"
+valor=3
+// star1.setAttribute("onclick", "avaliar()")
+divNota.appendChild(star3)
+
+var star4 = document.createElement("img")
+star4.id="star4"
+star4.src="IMG/star0.png"
+valor=4
+// star1.setAttribute("onclick", "avaliar()")
+divNota.appendChild(star4)
+
+var star5 = document.createElement("img")
+star5.id="star5"
+star5.src="IMG/star0.png"
+valor=5
+// star1.setAttribute("onclick", "avaliar()")
+divNota.appendChild(star5)
+
+var divBtnC = document.createElement("div")
+divBtnC.id="divBtnC"
+divFormEl.appendChild(divBtnC)
+
+var cancelarEl = document.createElement("button")
+cancelarEl.id="cancelarEl"
+cancelarEl.innerText="Cancelar"
+cancelarEl.setAttribute("onclick", "cancelar()")
+divBtnC.appendChild(cancelarEl)
+
+var divBtnE = document.createElement("div")
+divBtnE.id="divBtnE"
+divFormEl.appendChild(divBtnE)
+
+var enviarEl = document.createElement("button")
+enviarEl.id="enviarEl"
+enviarEl.innerText="Enviar"
+// enviarEl.setAttribute("onclick", "enviar()")
+divBtnE.appendChild(enviarEl)
+
+function materia(){
+    window.location.href="avaliarm.html" 
+}
