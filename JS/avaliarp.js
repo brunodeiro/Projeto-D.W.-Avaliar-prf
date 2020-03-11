@@ -136,141 +136,131 @@ var inputRadio3=document.createElement("input")
     labelRadio3.appendChild(inputRadio3)
 
 var divComent = document.createElement("div")
-divComent.id="divComent"
-divFormEl.appendChild(divComent)
+    divComent.id="divComent"
+    divFormEl.appendChild(divComent)
 
 var labelComent = document.createElement("label")
-labelComent.id="labelComent"
-labelComent.innerText="Comentário:"
-divComent.appendChild(labelComent)
+    labelComent.id="labelComent"
+    labelComent.innerText="Comentário:"
+    divComent.appendChild(labelComent)
 
 var labelAnon = document.createElement("label")
-labelAnon.id="labelAnon"
-labelAnon.innerText="Modo Anônimo "
-labelAnon.setAttribute("onclick", "atv()")
-divComent.appendChild(labelAnon)
+    labelAnon.id="labelAnon"
+    labelAnon.innerText="Modo Anônimo "
+    labelAnon.setAttribute("onclick", "atv()")
+    divComent.appendChild(labelAnon)
 
 var checkboxAnon = document.createElement("input")
-checkboxAnon.id="checkboxAnon"
-checkboxAnon.setAttribute("type", "checkbox")
-labelAnon.appendChild(checkboxAnon)
+    checkboxAnon.id="checkboxAnon"
+    checkboxAnon.setAttribute("type", "checkbox")
+    labelAnon.appendChild(checkboxAnon)
 //INCLUIR ICONE ANON
 var iconAnon = document.createElement("img")
-iconAnon.id="iconAnon"
-iconAnon.src="IMG/anon-logo.png"
-iconAnon.setAttribute("width", "20px")
-iconAnon.setAttribute("height", "20px")
-labelAnon.appendChild(iconAnon)
+    iconAnon.id="iconAnon"
+    iconAnon.src="IMG/anon-logo.png"
+    iconAnon.setAttribute("width", "20px")
+    iconAnon.setAttribute("height", "20px")
+    labelAnon.appendChild(iconAnon)
 
 var divTxt=document.createElement("div")
-divTxt.id="divTxt"
-divComent.appendChild(divTxt)
+    divTxt.id="divTxt"
+    divComent.appendChild(divTxt)
 
 var txtArea = document.createElement("textarea") // usar resize: none no css para deixar fixo
-txtArea.id="txtArea"
-txtArea.setAttribute("placeholder", "Escreva aqui...")
-txtArea.setAttribute("class", "fixo")
-// txtArea.setAttribute("cols", "num")
-// txtArea.setAttribute("rows", "num")
-// txtArea.setAttribute("width", "500px")
-// txtArea.setAttribute("heigth", "200px")
-divTxt.appendChild(txtArea)
+    txtArea.id="txtArea"
+    txtArea.setAttribute("placeholder", "Escreva aqui...")
+    txtArea.setAttribute("class", "fixo")
+    // txtArea.setAttribute("cols", "num")
+    // txtArea.setAttribute("rows", "num")
+    // txtArea.setAttribute("width", "500px")
+    // txtArea.setAttribute("heigth", "200px")
+    divTxt.appendChild(txtArea)
 
 var divNota = document.createElement("div")
-divNota.id="divNota"
-divFormEl.appendChild(divNota)
+    divNota.id="divNota"
+    divFormEl.appendChild(divNota)
 
 var labelNota = document.createElement("label")
-labelNota.id="labelNota"
-labelNota.innerText="Dê a sua nota !"
-divNota.appendChild(labelNota)
+    labelNota.id="labelNota"
+    labelNota.innerText="Dê a sua nota !"
+    divNota.appendChild(labelNota)
 
 var valor = 0
 
 var divStar =document.createElement("div")
-divStar.id="divStar"
-divNota.appendChild(divStar)
+    divStar.id="divStar"
+    divNota.appendChild(divStar)
 
 var imgStar1=document.createElement("img")
-imgStar1.id="imgStar1"
-imgStar1.src="IMG/star1.png"
-imgStar1.setAttribute("onclick", "avaliar1()")
-divStar.appendChild(imgStar1)
+    imgStar1.id="imgStar1"
+    imgStar1.src="IMG/star1.png"
+    imgStar1.setAttribute("onclick", "avaliar1()")
+    divStar.appendChild(imgStar1)
 
 var star1 = document.createElement("input")
-star1.id="star1"
-star1.setAttribute("type", "checkbox")
-imgStar1.appendChild(star1)
+    star1.id="star1"
+    star1.setAttribute("type", "checkbox")
+    imgStar1.appendChild(star1)
 
 var imgStar2=document.createElement("img")
-imgStar2.id="imgStar2"
-imgStar2.src="IMG/star2.png"
-imgStar2.setAttribute("onclick", "avaliar2()")
-divStar.appendChild(imgStar2)
+    imgStar2.id="imgStar2"
+    imgStar2.src="IMG/star2.png"
+    imgStar2.setAttribute("onclick", "avaliar2()")
+    divStar.appendChild(imgStar2)
 
 var star2 = document.createElement("input")
-star2.id="star2"
-star2.setAttribute("type", "checkbox")
-imgStar2.appendChild(star2)
+    star2.id="star2"
+    star2.setAttribute("type", "checkbox")
+    imgStar2.appendChild(star2)
 
 var imgStar3=document.createElement("img")
-imgStar3.id="imgStar3"
-imgStar3.src="IMG/star3.png"
-imgStar3.setAttribute("onclick", "avaliar3()")
-divStar.appendChild(imgStar3)
+    imgStar3.id="imgStar3"
+    imgStar3.src="IMG/star3.png"
+    imgStar3.setAttribute("onclick", "avaliar3()")
+    divStar.appendChild(imgStar3)
 
 var star3 = document.createElement("input")
-star3.id="star3"
-star3.setAttribute("type", "checkbox")
-imgStar3.appendChild(star3)
+    star3.id="star3"
+    star3.setAttribute("type", "checkbox")
+    imgStar3.appendChild(star3)
 
 var imgStar4=document.createElement("img")
-imgStar4.id="imgStar4"
-imgStar4.src="IMG/star4.png"
-imgStar4.setAttribute("onclick", "avaliar4()")
-divStar.appendChild(imgStar4)
+    imgStar4.id="imgStar4"
+    imgStar4.src="IMG/star4.png"
+    imgStar4.setAttribute("onclick", "avaliar4()")
+    divStar.appendChild(imgStar4)
 
 var star4 = document.createElement("input")
-star4.id="star4"
-star4.setAttribute("type", "checkbox")
-imgStar4.appendChild(star4)
+    star4.id="star4"
+    star4.setAttribute("type", "checkbox")
+    imgStar4.appendChild(star4)
 
 var imgStar5=document.createElement("img")
-imgStar5.id="imgStar5"
-imgStar5.src="IMG/star5.png"
-imgStar5.setAttribute("onclick", "avaliar5()")
-divStar.appendChild(imgStar5)
+    imgStar5.id="imgStar5"
+    imgStar5.src="IMG/star5.png"
+    imgStar5.setAttribute("onclick", "avaliar5()")
+    divStar.appendChild(imgStar5)
 
 var star5 = document.createElement("input")
-star5.id="star5"
-star5.setAttribute("type", "checkbox")
-imgStar5.appendChild(star5)
+    star5.id="star5"
+    star5.setAttribute("type", "checkbox")
+    imgStar5.appendChild(star5)
 
 var divBts = document.createElement("div")
-divBts.id="divBts"
-divFormEl.appendChild(divBts)
-
-// var divBtnC = document.createElement("div")
-// divBtnC.id="divBtnC"
-// divBts.appendChild(divBtnC)
+    divBts.id="divBts"
+    divFormEl.appendChild(divBts)
 
 var cancelarEl = document.createElement("button")
-cancelarEl.id="cancelarEl"
-cancelarEl.innerText="Cancelar"
-cancelarEl.setAttribute("onclick", "cancelar()")
-divBts.appendChild(cancelarEl)
-
-// var divBtnE = document.createElement("div")
-// divBtnE.id="divBtnE"
-// divBts.appendChild(divBtnE)
+    cancelarEl.id="cancelarEl"
+    cancelarEl.innerText="Cancelar"
+    cancelarEl.setAttribute("onclick", "cancelar()")
+    divBts.appendChild(cancelarEl)
 
 var enviarEl = document.createElement("button")
-enviarEl.id="enviarEl"
-enviarEl.innerText="Enviar"
-enviarEl.setAttribute("onclick", "enviar()")
-divBts.appendChild(enviarEl)
-
-
+    enviarEl.id="enviarEl"
+    enviarEl.innerText="Enviar"
+    enviarEl.setAttribute("onclick", "enviar()")
+    divBts.appendChild(enviarEl)
 
 function materia(){
     window.location.href="avaliarm.html" 
@@ -302,7 +292,7 @@ function cancelar(){
 }
 
 var materias=document.createElement("p")
-divFormEl.appendChild(materias)
+    divFormEl.appendChild(materias)
 
 function opc(){
     if(inputRadio1.checked==true){
