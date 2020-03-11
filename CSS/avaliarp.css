@@ -241,7 +241,7 @@ footer{
 #labelRadio31:hover{
     background-color: dodgerblue;
     color: white;
-    box-shadow: 2px 2px rgb(44, 14, 175);
+    box-shadow: 2px 2px 2px 2px rgb(44, 14, 175);
 }
 
 #divComent{
@@ -315,7 +315,7 @@ footer{
 #enviarEl:hover{
     background-color: rgb(17, 94, 236);
     color: white;
-    box-shadow: 2px 2px rgb(44, 14, 175);
+    box-shadow: 2px 2px 2px 2px rgb(44, 14, 175);
 }
 
 #cancelarEl{
@@ -330,7 +330,7 @@ footer{
 #cancelarEl:hover{
     background-color: rgba(255, 17, 0, 0.76);
     color: white;
-    box-shadow: 2px 2px rgb(44, 14, 175);
+    box-shadow: 2px 2px 2px 2px rgb(44, 14, 175);
 }
 
 /* #enviarEl:focus{
@@ -338,11 +338,3 @@ footer{
     color: white;
     box-shadow: 2px 2px rgb(60, 30, 194);
 } */
-
-#star1{
-    /* visibility: hidden; */
-}
-
-#imgStar1:hover{
-    background: url("IMG/star1.png");
-}
