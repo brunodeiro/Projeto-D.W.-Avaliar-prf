@@ -301,9 +301,12 @@ function cancelar(){
     window.location.href="menu.html"
 }
 
+var materias=document.createElement("p")
+divFormEl.appendChild(materias)
+
 function opc(){
     if(inputRadio1.checked==true){
-        var materias="Materia A"
+        materias="Materia A"
         labelRadio1.style.backgroundColor="rgb(0, 89, 255)"
         labelRadio1.style.color="white"
         labelRadio1.style.boxShadow="2px 2px rgb(60, 30, 194)"
@@ -316,7 +319,7 @@ function opc(){
         // alert("A")//Verificador de teste
     }
     if(inputRadio2.checked==true){
-        var materias="Materia B"
+        materias="Materia B"
         labelRadio2.style.backgroundColor="rgb(0, 89, 255)"
         labelRadio2.style.color="white"
         labelRadio2.style.boxShadow="2px 2px rgb(60, 30, 194)"
@@ -329,7 +332,7 @@ function opc(){
         // alert("B")//Verificador de teste
     }
     if(inputRadio3.checked==true){
-        var materias="Materia C"
+        materias="Materia C"
         labelRadio3.style.backgroundColor="rgb(0, 89, 255)"
         labelRadio3.style.color="white"
         labelRadio3.style.boxShadow="2px 2px rgb(60, 30, 194)"
@@ -345,9 +348,10 @@ function opc(){
 }
 
 function enviar(){
-    if(inputNome.value && txtArea.value && valor>0 && materias.value){
+    if(inputNome.value && txtArea.value && valor>=1 ){ //&& materias.value      INCLUIR OS INPUT_RADIO NA VALIDAÇÃO
+        confirm("Deseja enviar sua avaliação ?")
         window.location.href="comentarios.html"
-    }//incompleto
+    }
     else{
         alert("Preencha todos os campos!")
     }
