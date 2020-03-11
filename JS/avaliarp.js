@@ -142,5 +142,16 @@ var iconAnon = document.createElement("img")
 iconAnon.id="iconAnon"
 iconAnon.src="IMG/anon-logo.png"
 iconAnon.setAttribute("width", "20px")
-iconAnon.setAttribute("height", "10px")
-divComent.appendChild(iconAnon)
+iconAnon.setAttribute("height", "20px")
+labelAnon.appendChild(iconAnon)
+
+var txtArea = document.createElement("textarea") // usar resize: none no css para deixar fixo
+txtArea.id="txtArea"
+txtArea.setAttribute("placeholder", "Escreva aqui")
+txtArea.setAttribute("width", "250px")
+txtArea.setAttribute("heigth", "150px")
+divComent.appendChild(txtArea)
+
+var divNota = document.createElement("div")
+divNota.id="divNota"
+divFormEl.appendChild(divNota)
