@@ -103,7 +103,7 @@ var labelRadio1=document.createElement("label")
 var inputRadio1=document.createElement("input")
     inputRadio1.id="inputRadio1"
     inputRadio1.name="materia"
-    inputRadio1.setAttribute("type", "checkbox")
+    inputRadio1.setAttribute("type", "radio")
     inputRadio1.disabled=true
     labelRadio1.appendChild(inputRadio1)
 
@@ -117,7 +117,7 @@ var labelRadio2=document.createElement("label")
 var inputRadio2=document.createElement("input")
     inputRadio2.id="inputRadio2"
     inputRadio2.name="materia"
-    inputRadio2.setAttribute("type", "checkbox")
+    inputRadio2.setAttribute("type", "radio")
     inputRadio2.disabled=true
     labelRadio2.appendChild(inputRadio2)
 
@@ -131,7 +131,7 @@ var labelRadio3=document.createElement("label")
 var inputRadio3=document.createElement("input")
     inputRadio3.id="inputRadio3"
     inputRadio3.name="materia"
-    inputRadio3.setAttribute("type", "checkbox")
+    inputRadio3.setAttribute("type", "radio")
     inputRadio3.disabled=true
     labelRadio3.appendChild(inputRadio3)
 
@@ -147,6 +147,7 @@ divComent.appendChild(labelComent)
 var labelAnon = document.createElement("label")
 labelAnon.id="labelAnon"
 labelAnon.innerText="Modo Anônimo "
+labelAnon.setAttribute("onclick", "atv()")
 divComent.appendChild(labelAnon)
 
 var checkboxAnon = document.createElement("input")
@@ -246,7 +247,7 @@ divBts.appendChild(cancelarEl)
 var enviarEl = document.createElement("button")
 enviarEl.id="enviarEl"
 enviarEl.innerText="Enviar"
-// enviarEl.setAttribute("onclick", "enviar()")
+enviarEl.setAttribute("onclick", "enviar()")
 divBts.appendChild(enviarEl)
 
 
@@ -264,11 +265,52 @@ function pesquisar(){
         imgP.src="IMG/avatar-professor.png"
         divMateria.style.color="black"
         labelRadio1.id="labelRadio11"
+        inputRadio1.setAttribute("onclick", "opc()")
+        inputRadio2.setAttribute("onclick", "opc()")
+        inputRadio3.setAttribute("onclick", "opc()")
         labelRadio2.id="labelRadio21"
         labelRadio3.id="labelRadio31"
         //inputNome.value="" NÃO PRECISA LIMPAR, POIS O NOME DEVE CONTINUAR NO INMPUT PARA QUE O USER TENHA NOÇÃO DO QUE DIGITOU
     }
     else{
         alert("Preencha todos os campos!")
+    }
+}
+
+function cancelar(){
+    window.location.href="menu.html"
+}
+
+function opc(){
+    if(inputRadio1.checked==true){
+        var materias="Materia A"
+        alert("A")//Verificador de teste
+    }
+    if(inputRadio2.checked==true){
+        var materias="Materia B"
+        alert("B")//Verificador de teste
+    }
+    if(inputRadio3.checked==true){
+        var materias="Materia C"
+        alert("C")//Verificador de teste
+    }
+    
+}
+
+function enviar(){
+    if(inputNome.value && txtArea.value && valor>0 && materias.value){
+        window.location.href="comentarios.html"
+    }//incompleto
+    else{
+        alert("Preencha todos os campos!")
+    }
+}
+
+function atv(){
+    if(checkboxAnon.checked==true){
+        labelAnon.style.color="rgb(44, 14, 175)"
+    }
+    else{
+        labelAnon.style.color="black"
     }
 }
