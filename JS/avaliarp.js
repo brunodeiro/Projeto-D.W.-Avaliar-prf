@@ -191,40 +191,60 @@ var divStar =document.createElement("div")
 divStar.id="divStar"
 divNota.appendChild(divStar)
 
-var star1 = document.createElement("img")
+var imgStar1=document.createElement("img")
+imgStar1.id="imgStar1"
+imgStar1.src="IMG/star1.png"
+imgStar1.setAttribute("onclick", "avaliar1()")
+divStar.appendChild(imgStar1)
+
+var star1 = document.createElement("input")
 star1.id="star1"
-star1.src="IMG/star0.png"
-valor=1
-// star1.setAttribute("onclick", "avaliar()")
-divStar.appendChild(star1)
+star1.setAttribute("type", "checkbox")
+imgStar1.appendChild(star1)
 
-var star2 = document.createElement("img")
+var imgStar2=document.createElement("img")
+imgStar2.id="imgStar2"
+imgStar2.src="IMG/star2.png"
+imgStar2.setAttribute("onclick", "avaliar2()")
+divStar.appendChild(imgStar2)
+
+var star2 = document.createElement("input")
 star2.id="star2"
-star2.src="IMG/star0.png"
-valor=2
-// star1.setAttribute("onclick", "avaliar()")
-divStar.appendChild(star2)
+star2.setAttribute("type", "checkbox")
+imgStar2.appendChild(star2)
 
-var star3 = document.createElement("img")
+var imgStar3=document.createElement("img")
+imgStar3.id="imgStar3"
+imgStar3.src="IMG/star3.png"
+imgStar3.setAttribute("onclick", "avaliar3()")
+divStar.appendChild(imgStar3)
+
+var star3 = document.createElement("input")
 star3.id="star3"
-star3.src="IMG/star0.png"
-valor=3
-// star1.setAttribute("onclick", "avaliar()")
-divStar.appendChild(star3)
+star3.setAttribute("type", "checkbox")
+imgStar3.appendChild(star3)
 
-var star4 = document.createElement("img")
+var imgStar4=document.createElement("img")
+imgStar4.id="imgStar4"
+imgStar4.src="IMG/star4.png"
+imgStar4.setAttribute("onclick", "avaliar4()")
+divStar.appendChild(imgStar4)
+
+var star4 = document.createElement("input")
 star4.id="star4"
-star4.src="IMG/star0.png"
-valor=4
-// star1.setAttribute("onclick", "avaliar()")
-divStar.appendChild(star4)
+star4.setAttribute("type", "checkbox")
+imgStar4.appendChild(star4)
 
-var star5 = document.createElement("img")
+var imgStar5=document.createElement("img")
+imgStar5.id="imgStar5"
+imgStar5.src="IMG/star5.png"
+imgStar5.setAttribute("onclick", "avaliar5()")
+divStar.appendChild(imgStar5)
+
+var star5 = document.createElement("input")
 star5.id="star5"
-star5.src="IMG/star0.png"
-valor=5
-// star1.setAttribute("onclick", "avaliar()")
-divStar.appendChild(star5)
+star5.setAttribute("type", "checkbox")
+imgStar5.appendChild(star5)
 
 var divBts = document.createElement("div")
 divBts.id="divBts"
@@ -341,5 +361,85 @@ function atv(){
     else{
         labelAnon.style.color="black"
         labelAnon.style.fontWeight="normal"
+    }
+}
+
+function avaliar1(){
+    valor=1
+    if(valor==1){
+        star1.checked=true
+        star2.checked=false
+        star3.checked=false
+        star4.checked=false
+        star5.checked=false
+        imgStar1.src="IMG/star0.png"
+        imgStar2.src="IMG/star2.png"
+        imgStar3.src="IMG/star3.png"
+        imgStar4.src="IMG/star4.png"
+        imgStar5.src="IMG/star5.png"
+    }
+}
+
+function avaliar2(){
+    valor=2
+    if(valor==2){
+        star1.checked=true
+        star2.checked=true
+        star3.checked=false
+        star4.checked=false
+        star5.checked=false
+        imgStar1.src="IMG/star0.png"
+        imgStar2.src="IMG/star0.png"
+        imgStar3.src="IMG/star3.png"
+        imgStar4.src="IMG/star4.png"
+        imgStar5.src="IMG/star5.png"
+    }
+}
+
+function avaliar3(){
+    valor=3
+    if(valor==3){
+        star1.checked=true
+        star2.checked=true
+        star3.checked=true
+        star4.checked=false
+        star5.checked=false
+        imgStar1.src="IMG/star0.png"
+        imgStar2.src="IMG/star0.png"
+        imgStar3.src="IMG/star0.png"
+        imgStar4.src="IMG/star4.png"
+        imgStar5.src="IMG/star5.png"
+    }
+}
+
+function avaliar4(){
+    valor=4
+    if(valor==4){
+        star1.checked=true
+        star2.checked=true
+        star3.checked=true
+        star4.checked=true
+        star5.checked=false
+        imgStar1.src="IMG/star0.png"
+        imgStar2.src="IMG/star0.png"
+        imgStar3.src="IMG/star0.png"
+        imgStar4.src="IMG/star0.png"
+        imgStar5.src="IMG/star5.png"
+    }
+}
+
+function avaliar5(){
+    valor=5
+    if(valor==5){
+        star1.checked=true
+        star2.checked=true
+        star3.checked=true
+        star4.checked=true
+        star5.checked=true
+        imgStar1.src="IMG/star0.png"
+        imgStar2.src="IMG/star0.png"
+        imgStar3.src="IMG/star0.png"
+        imgStar4.src="IMG/star0.png"
+        imgStar5.src="IMG/star0.png"
     }
 }
