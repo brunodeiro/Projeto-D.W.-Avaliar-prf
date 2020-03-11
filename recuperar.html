@@ -20,10 +20,14 @@
                 </div>
                 <div id="contraste">    
                     <label class='contraste' for="" >Contraste:</label>
-                    <input type="radio" id="branco" name="contraste" onclick="mudarContraste(this)" value="Preto">
+                    <a>
+                        <img class='contraste-normal' onclick="branco()" name = 'normal' src="IMG/contraste_normal.png">
+                        <img class='alto-contraste' onclick="escuro()" name='alto' src="img/alto_contraste.png">
+                    </a>
+                    <!-- <input type="radio" id="branco" name="contraste" onclick="mudarContraste(this)" value="Preto">
                     <label for="Branco">Normal</label>
                     <input type="radio" id="marron" name="contraste" onclick="mudarContraste(this)" value="Branco">
-                    <label for="Marron">Escuro</label>
+                    <label for="Marron">Escuro</label> -->
                 </div>
         </header>
         <div id="texto" align='center'>
