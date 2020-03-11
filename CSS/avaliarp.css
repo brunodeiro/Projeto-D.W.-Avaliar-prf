@@ -49,7 +49,6 @@ footer{
 
 #divFiltro{
     margin-bottom: 15px;
-    /* background-color: cyan; */
     width: 420px;
     
 }
@@ -62,7 +61,6 @@ footer{
 #divBtn{
     text-align: right;
     width: 340px;
-    /* background-color: cyan; */
 }
 
 #avaliarM{
@@ -85,12 +83,12 @@ footer{
 #avaliarM:hover{
     background-color: rgb(17, 94, 236);
     color: white;
+    box-shadow: 2px 2px rgb(44, 14, 175);
 }
 
 #divNome{
     margin-bottom: 15px;
     width: 420px;
-    /* background-color: cyan; */
 }
 
 #inputNome{
@@ -120,7 +118,6 @@ footer{
 }
 
 #divImg{
-    /* background-color: crimson; */
     float: right;
     width: 90px;
     height: 90px;
@@ -133,7 +130,6 @@ footer{
 }
 
 #divMateria{
-    /* background-color: cyan; */
     width: 92px;
     height: 20px;
     float: left;
@@ -142,7 +138,6 @@ footer{
 }
 
 #divBtnMateria{
-    /* background-color: darksalmon; */
     width: 413px;
     height: 20px;
     padding-left: 5px;
@@ -207,12 +202,12 @@ footer{
 #labelRadio11:hover{
     background-color: dodgerblue;
     color: white;
+    box-shadow: 0 1px 0 1px rgb(44, 14, 175);
 }
 
 #labelRadio21{
     padding: 0 10px; 
-    padding-left: 17px;  
-    border-radius: 4px 0 0 4px; 
+    padding-left: 17px;   
     border: 1px solid rgb(48, 132, 206);
     text-align: center;
     height: 20px;
@@ -223,12 +218,13 @@ footer{
 #labelRadio21:hover{
     background-color: dodgerblue;
     color: white;
+    box-shadow: 2px 2px rgb(44, 14, 175);
 }
 
 #labelRadio31{
     padding: 0 10px; 
     padding-left: 17px;  
-    border-radius: 4px 0 0 4px; 
+    border-radius: 0 4px 4px 0;
     border: 1px solid rgb(48, 132, 206);
     text-align: center;
     height: 20px;
@@ -239,4 +235,95 @@ footer{
 #labelRadio31:hover{
     background-color: dodgerblue;
     color: white;
+    box-shadow: 2px 2px rgb(44, 14, 175);
+}
+
+#divComent{
+    width: 330px;
+    height: 200px;
+    float: left;
+    margin-top: 20px;
+}
+
+#labelComent{
+    width: 120px;
+    float: left;
+    text-align: left;
+    margin-top: 7px;
+}
+
+#labelAnon{
+    margin-left: 40px;
+} 
+
+#checkboxAnon{
+    margin: 0 10px;
+}
+
+#txtArea{ 
+    float: left;
+    width: 300px;
+    height: 150px;
+    margin-top: 2px;
+    padding-top: 5px;
+    padding-left: 10px;
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px;
+}
+
+#divNota{
+    width: 160px;
+    float: right;
+    height: 100px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#labelNota{
+    width: 120px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#divStar{
+    margin-top: 15px;
+    border: 2px solid rgba(48, 132, 206, 0.384);
+    border-radius: 4px;
+}
+/* 
+#divBtnC{
+    background-color: darkseagreen;
+    width: 60px;
+    margin-top: 180px;
+    margin-left: 350px;
+}
+
+#divBtnE{
+    background-color: dimgray;
+    width: 60px;
+    margin-left: 440px;
+} */
+
+#divBts{
+    background-color: cyan;
+    margin-top: 170px;
+    margin-left: 350px;
+    /* float: right; */
+}
+
+#enviarEl{
+    margin-left: 40px;
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px;
+    height: 50px;
+    width: 80px;
+}
+
+#cancelarEl{
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px;
+    height: 30px;
+    width: 80px;
+    padding: 2px 5px;
 }
