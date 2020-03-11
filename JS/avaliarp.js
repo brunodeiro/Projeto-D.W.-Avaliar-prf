@@ -21,6 +21,18 @@ var logoEl = document.createElement("img")
     logoEl.setAttribute("height", "80px")
     divHeaderEl.appendChild(logoEl)
 
+var divImg=document.createElement("div") //SETAR ATRIBUTO DE IMAGEM PARA QUE AO PESQUISAR (DAVID LINS NO [btnNome]) APAREÇA SUA FOTO
+    divImg.id="divImg"
+    divFormEl.appendChild(divImg)
+
+var imgP = document.createElement("img")
+    imgP.id="imgP"
+    imgP.src="IMG/avatar-icon.png"
+    imgP.setAttribute("width", "70px")
+    imgP.setAttribute("height", "85px")
+    divImg.appendChild(imgP)
+
+
 var divFiltro = document.createElement("div")
     divFiltro.id="divFiltro"
     divFormEl.appendChild(divFiltro)
@@ -40,7 +52,7 @@ var avaliarP = document.createElement("button") //DEIXAR ESTE SELECIONADO
     avaliarP.disabled = true
     divBtn.appendChild(avaliarP)
 
-var avaliarM = document.createElement("button") //DIRECIONAR PARA A PAGINA AVALIARMATERIA.HTML
+var avaliarM = document.createElement("button") //DIRECIONAR PARA A PAGINA AVALIARM.HTML
     avaliarM.id="avaliarM"
     avaliarM.innerText="Matéria"
     avaliarM.setAttribute("onclick", "materia()")
@@ -51,7 +63,7 @@ var divNome = document.createElement("div")
     divFormEl.appendChild(divNome)    
 
 var labelNome = document.createElement("label")
-    labelNome.id="labelFiltro"
+    labelNome.id="labelNome"
     labelNome.innerText="Nome:"
     divNome.appendChild(labelNome)     
 
@@ -65,11 +77,10 @@ var btnNome = document.createElement("button") //SIMULAR PESQUISA DO NOME (DAVID
     btnNome.id="btnNome"
     // btnNome.html
     btnNome.setAttribute("class", "fa fa-search")
+    btnNome.setAttribute("onclick", "pesquisar()")
     divNome.appendChild(btnNome)
 
-var imgP=document.createElement("div") //SETAR ATRIBUTO DE IMAGEM PARA QUE AO PESQUISAR (DAVID LINS NO [btnNome]) APAREÇA SUA FOTO
-    imgP.id="imgP"
-    divFormEl.appendChild(imgP)
+
 
 var divMateria=document.createElement("div")
     divMateria.id="divMateria"
@@ -82,43 +93,46 @@ var labelMateria=document.createElement("label")
 
 var divBtnMateria=document.createElement("div")    
     divBtnMateria.id="divBtnMateria"
-    divMateria.appendChild(divBtnMateria)
+    divFormEl.appendChild(divBtnMateria)
 //CRIAR FUNÇÃO PARA SELECIONAR APENAS UMA DAS 3 MATERIAS
 var labelRadio1=document.createElement("label")
     labelRadio1.id="labelRadio1"
-    labelRadio1.innerText="Materia 01"
+    labelRadio1.innerText="Materia A"
     divBtnMateria.appendChild(labelRadio1)
 
 var inputRadio1=document.createElement("input")
     inputRadio1.id="inputRadio1"
     inputRadio1.name="materia"
     inputRadio1.setAttribute("type", "radio")
+    inputRadio1.disabled=true
     labelRadio1.appendChild(inputRadio1)
 
 //CLONE2
 
 var labelRadio2=document.createElement("label")
     labelRadio2.id="labelRadio2"
-    labelRadio2.innerText="Materia 02"
+    labelRadio2.innerText="Materia B"
     divBtnMateria.appendChild(labelRadio2)
 
 var inputRadio2=document.createElement("input")
     inputRadio2.id="inputRadio2"
     inputRadio2.name="materia"
     inputRadio2.setAttribute("type", "radio")
+    inputRadio2.disabled=true
     labelRadio2.appendChild(inputRadio2)
 
 //CLONE3
 
 var labelRadio3=document.createElement("label")
     labelRadio3.id="labelRadio3"
-    labelRadio3.innerText="Materia 03"
+    labelRadio3.innerText="Materia C"
     divBtnMateria.appendChild(labelRadio3)
 
 var inputRadio3=document.createElement("input")
     inputRadio3.id="inputRadio3"
     inputRadio3.name="materia"
     inputRadio3.setAttribute("type", "radio")
+    inputRadio3.disabled=true
     labelRadio3.appendChild(inputRadio3)
 
 var divComent = document.createElement("div")
@@ -225,4 +239,22 @@ divBtnE.appendChild(enviarEl)
 
 function materia(){
     window.location.href="avaliarm.html" 
+}
+
+function pesquisar(){
+    if (inputNome.value){
+        alert("Simulação de busca de Professor!")
+        inputRadio1.disabled=false
+        inputRadio2.disabled=false
+        inputRadio3.disabled=false
+        imgP.src="IMG/avatar-professor.png"
+        divMateria.style.color="black"
+        labelRadio1.id="labelRadio11"
+        labelRadio2.id="labelRadio21"
+        labelRadio3.id="labelRadio31"
+        //inputNome.value="" NÃO PRECISA LIMPAR, POIS O NOME DEVE CONTINUAR NO INMPUT PARA QUE O USER TENHA NOÇÃO DO QUE DIGITOU
+    }
+    else{
+        alert("Preencha todos os campos!")
+    }
 }

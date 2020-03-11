@@ -49,6 +49,8 @@ footer{
 
 #divFiltro{
     margin-bottom: 15px;
+    /* background-color: cyan; */
+    width: 420px;
     
 }
 
@@ -60,13 +62,14 @@ footer{
 #divBtn{
     text-align: right;
     width: 340px;
+    /* background-color: cyan; */
 }
 
 #avaliarM{
     border-radius: 0 4px 4px 0;
     height: 30px;
     padding: 0 10px;
-    background-color: white;
+    background-color: cornflowerblue;
     border: 1px solid rgb(48, 132, 206);
 }
 
@@ -74,11 +77,166 @@ footer{
     border-radius: 4px 0 0 4px;
     height: 30px;
     padding: 0 10px;
-    background-color: cornflowerblue;
-    color: white;
+    background-color: rgba(89, 99, 119, 0.432);
+    color: rgb(94, 94, 94);
     border: 1px solid rgb(48, 132, 206);
 }
 
 #avaliarM:hover{
-    background-color: rgba(108, 145, 212, 0.616);
+    background-color: rgb(17, 94, 236);
+    color: white;
+}
+
+#divNome{
+    margin-bottom: 15px;
+    width: 420px;
+    /* background-color: cyan; */
+}
+
+#inputNome{
+    margin-left: 50px;
+    width: 300px;
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px 0 0 4px;
+    padding-left: 2px;
+    height: 20px;
+    border-right: transparent;
+}
+
+#btnNome{
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 0 4px 4px 0;
+    height: 22.1px;
+    width: 21px;
+    padding: 3px;
+    border-left: transparent;
+    margin-top: 0.5px;
+    margin-bottom: 0;
+    background-color: white;
+}
+
+#btnNome:hover{
+    color: cornflowerblue;
+}
+
+#divImg{
+    /* background-color: crimson; */
+    float: right;
+    width: 90px;
+    height: 90px;
+    margin-top: 0px;    
+}
+
+#imgP{
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+#divMateria{
+    /* background-color: cyan; */
+    width: 92px;
+    height: 20px;
+    float: left;
+    margin-bottom: 15px;
+    color: rgba(94, 94, 94, 0.527);
+}
+
+#divBtnMateria{
+    /* background-color: darksalmon; */
+    width: 413px;
+    height: 20px;
+    padding-left: 5px;
+    margin-bottom: 15px;
+}
+
+#labelRadio1{
+    padding: 0 10px; 
+    padding-left: 17px;  
+    border-radius: 4px 0 0 4px; 
+    border: 1px solid rgba(91, 91, 92, 0.336);
+    text-align: center;
+    height: 20px;
+    background-color: rgba(89, 99, 119, 0.24);
+    color: rgba(94, 94, 94, 0.527);
+}
+
+#labelRadio2{
+    padding: 0 10px;
+    padding-left: 17px;
+    border: 1px solid rgba(91, 91, 92, 0.336);
+    text-align: center;
+    height: 20px;
+    background-color: rgba(89, 99, 119, 0.24);
+    color: rgba(94, 94, 94, 0.527);
+}
+
+#labelRadio3{
+    padding: 0 10px;
+    padding-left: 17px;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid rgba(91, 91, 92, 0.336);
+    text-align: center;
+    height: 20px;
+    background-color: rgba(89, 99, 119, 0.24);
+    color: rgba(94, 94, 94, 0.527);
+}
+
+#inputRadio1{
+    visibility: hidden;
+}
+
+#inputRadio2{
+    visibility: hidden;
+}
+
+#inputRadio3{
+    visibility: hidden;
+}
+
+#labelRadio11{
+    padding: 0 10px; 
+    padding-left: 17px;  
+    border-radius: 4px 0 0 4px; 
+    border: 1px solid rgb(48, 132, 206);
+    text-align: center;
+    height: 20px;
+    background-color: rgba(100, 148, 237, 0.616);
+    color: black;
+}
+
+#labelRadio11:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#labelRadio21{
+    padding: 0 10px; 
+    padding-left: 17px;  
+    border-radius: 4px 0 0 4px; 
+    border: 1px solid rgb(48, 132, 206);
+    text-align: center;
+    height: 20px;
+    background-color: rgba(100, 148, 237, 0.616);
+    color: black;
+}
+
+#labelRadio21:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+#labelRadio31{
+    padding: 0 10px; 
+    padding-left: 17px;  
+    border-radius: 4px 0 0 4px; 
+    border: 1px solid rgb(48, 132, 206);
+    text-align: center;
+    height: 20px;
+    background-color: rgba(100, 148, 237, 0.616);
+    color: black;
+}
+
+#labelRadio31:hover{
+    background-color: dodgerblue;
+    color: white;
 }
