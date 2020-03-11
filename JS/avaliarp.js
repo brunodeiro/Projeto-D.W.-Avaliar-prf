@@ -284,14 +284,41 @@ function cancelar(){
 function opc(){
     if(inputRadio1.checked==true){
         var materias="Materia A"
+        labelRadio1.style.backgroundColor="rgb(0, 89, 255)"
+        labelRadio1.style.color="white"
+        labelRadio1.style.boxShadow="2px 2px rgb(60, 30, 194)"
+        labelRadio2.style.backgroundColor="rgba(100, 148, 237, 0.616)"
+        labelRadio2.style.color="black"
+        labelRadio2.style.boxShadow="transparent"
+        labelRadio3.style.backgroundColor="rgba(100, 148, 237, 0.616)"
+        labelRadio3.style.color="black"
+        labelRadio3.style.boxShadow="transparent"
         alert("A")//Verificador de teste
     }
     if(inputRadio2.checked==true){
         var materias="Materia B"
+        labelRadio2.style.backgroundColor="rgb(0, 89, 255)"
+        labelRadio2.style.color="white"
+        labelRadio2.style.boxShadow="2px 2px rgb(60, 30, 194)"
+        labelRadio1.style.backgroundColor="rgba(100, 148, 237, 0.616)"
+        labelRadio1.style.color="black"
+        labelRadio1.style.boxShadow="transparent"
+        labelRadio3.style.backgroundColor="rgba(100, 148, 237, 0.616)"
+        labelRadio3.style.color="black"
+        labelRadio3.style.boxShadow="transparent"
         alert("B")//Verificador de teste
     }
     if(inputRadio3.checked==true){
         var materias="Materia C"
+        labelRadio3.style.backgroundColor="rgb(0, 89, 255)"
+        labelRadio3.style.color="white"
+        labelRadio3.style.boxShadow="2px 2px rgb(60, 30, 194)"
+        labelRadio2.style.backgroundColor="rgba(100, 148, 237, 0.616)"
+        labelRadio2.style.color="black"
+        labelRadio2.style.boxShadow="transparent"
+        labelRadio1.style.backgroundColor="rgba(100, 148, 237, 0.616)"
+        labelRadio1.style.color="black"
+        labelRadio1.style.boxShadow="transparent"
         alert("C")//Verificador de teste
     }
     
@@ -309,8 +336,10 @@ function enviar(){
 function atv(){
     if(checkboxAnon.checked==true){
         labelAnon.style.color="rgb(44, 14, 175)"
+        labelAnon.style.fontWeight="bold"
     }
     else{
         labelAnon.style.color="black"
+        labelAnon.style.fontWeight="normal"
     }
 }
