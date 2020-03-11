@@ -205,6 +205,12 @@ footer{
     box-shadow: 0 1px 0 1px rgb(44, 14, 175);
 }
 
+#labelRadio11:focus{
+    background-color: dodgerblue;
+    color: white;
+    box-shadow: 0 1px 0 1px rgb(44, 14, 175);
+}
+
 #labelRadio21{
     padding: 0 10px; 
     padding-left: 17px;   
@@ -291,25 +297,10 @@ footer{
     border: 2px solid rgba(48, 132, 206, 0.384);
     border-radius: 4px;
 }
-/* 
-#divBtnC{
-    background-color: darkseagreen;
-    width: 60px;
-    margin-top: 180px;
-    margin-left: 350px;
-}
-
-#divBtnE{
-    background-color: dimgray;
-    width: 60px;
-    margin-left: 440px;
-} */
 
 #divBts{
-    background-color: cyan;
     margin-top: 170px;
     margin-left: 350px;
-    /* float: right; */
 }
 
 #enviarEl{
@@ -318,6 +309,13 @@ footer{
     border-radius: 4px;
     height: 50px;
     width: 80px;
+    background-color: cornflowerblue;
+}
+
+#enviarEl:hover{
+    background-color: rgb(17, 94, 236);
+    color: white;
+    box-shadow: 2px 2px rgb(44, 14, 175);
 }
 
 #cancelarEl{
@@ -326,4 +324,17 @@ footer{
     height: 30px;
     width: 80px;
     padding: 2px 5px;
+    background-color: rgb(252, 161, 130);
 }
+
+#cancelarEl:hover{
+    background-color: rgba(255, 17, 0, 0.76);
+    color: white;
+    box-shadow: 2px 2px rgb(44, 14, 175);
+}
+
+/* #enviarEl:focus{
+    background-color: rgb(0, 89, 255);
+    color: white;
+    box-shadow: 2px 2px rgb(60, 30, 194);
+} */
