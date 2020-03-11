@@ -1,0 +1,56 @@
+*{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 80px;
+    padding: 20px;
+    background: rgb(47,104,187);
+    background: linear-gradient(90deg, rgba(47,104,187,1) 0%, rgba(33,109,221,1) 31%, rgba(23,92,175,1) 100%);
+}
+
+footer{
+    background: rgb(47,104,187);
+    background: linear-gradient(90deg, rgba(47,104,187,1) 0%, rgba(33,109,221,1) 31%, rgba(23,92,175,1) 100%);
+    height: 20px;
+    text-align: center;
+    padding: 30px;
+    font-family: helvetica;
+    color: aliceblue;
+    clear: both;
+
+}
+
+/*DAQUI PRA CIMA É A BASE DE TODAS AS PÁGINAS*/
+
+#divForm{
+    margin: 1% 5% 3%;
+    background-color: aliceblue;
+    float: left;
+    border: 1px solid rgb(48, 132, 206);
+    border-radius: 4px;
+    padding: 30px;
+    width: 1610px;
+    height: 557px;
+}
+
+#texto{
+    margin-top: 115px;
+}
+
+#linha{
+    margin-left: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+#txt{
+    text-align: left;
+    float: left;
+    margin-left: 10px;
+}
