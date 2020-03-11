@@ -348,7 +348,7 @@ function opc(){
 }
 
 function enviar(){
-    if(inputNome.value && txtArea.value && valor>=1 ){ //&& materias.value      INCLUIR OS INPUT_RADIO NA VALIDAÇÃO
+    if(inputNome.value && txtArea.value && valor>=1 && (inputRadio1.checked || inputRadio2.checked || inputRadio3.checked) ){ 
         confirm("Deseja enviar sua avaliação ?")
         window.location.href="comentarios.html"
     }
