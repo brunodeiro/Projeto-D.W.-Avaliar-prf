@@ -119,3 +119,28 @@ var inputRadio3=document.createElement("input")
     inputRadio3.setAttribute("type", "radio")
     labelRadio3.appendChild(inputRadio3)
 
+var divComent = document.createElement("div")
+divComent.id="divComent"
+divFormEl.appendChild(divComent)
+
+var labelComent = document.createElement("label")
+labelComent.id="labelComent"
+labelComent.innerText="Comentário:"
+divComent.appendChild(labelComent)
+
+var labelAnon = document.createElement("label")
+labelAnon.id="labelAnon"
+labelAnon.innerText="Modo Anônimo "
+divComent.appendChild(labelAnon)
+
+var checkboxAnon = document.createElement("input")
+checkboxAnon.id="checkboxAnon"
+checkboxAnon.setAttribute("type", "checkbox")
+labelAnon.appendChild(checkboxAnon)
+//INCLUIR ICONE ANON
+var iconAnon = document.createElement("img")
+iconAnon.id="iconAnon"
+iconAnon.src="IMG/anon-logo.png"
+iconAnon.setAttribute("width", "20px")
+iconAnon.setAttribute("height", "10px")
+divComent.appendChild(iconAnon)
