@@ -4,15 +4,42 @@
     <meta charset="UTF-8">
     <title>menu</title>
     <link rel="stylesheet" type="text/css" href="CSS/menu.css"/>
+    <link rel="stylesheet" href="CSS/Acessibilidade.css">
 </head>
-<body>
-    <header id="header"></header>
+<body class="fundo">
+    <header id="header">
+        <div id="link">
+            <a href="avaliarp.html">Ir Para Avaliação[1]</a>
+        </div>
+        <div id="link-2">
+            <a href="comentario.html">Ir Para Comentários[2]</a>
+        </div>
+        <div id="link-3">
+            <a href="ajuda.html">Ajuda Acessibilidade[3]</a>
+        </div>
+        <div id="link-4">
+            <a href="Index.html">Sair</a>
+        </div>
+        <div class="btn-container">
+            <label class='fonte' for="">Fonte:</label>
+            <button  id="aumentar" title="Aumentar fonte">A+</button>
+            <button  id="diminuir" title="Diminuir fonte">A-</button>
+        </div>
+        <div id="contraste">    
+            <label class='contraste' for="" >Contraste:</label>
+            <a>
+                <img class='contraste-normal' onclick="branco()" name = 'normal' src="http://www.luizacaspary.com.br/imagens/contraste_normal.png">
+                <img class='alto-contraste' onclick="escuro()" name='alto' src="http://www.luizacaspary.com.br/imagens/alto_contraste.png">
+            </a>
+        </div>
+    </header>
     <div id="texto" align="center">
-        <h2>Menu</h2>
+        <h2 id="titulo">Menu</h2>
         <hr width="25%" id="linha">
     </div>
     <div id="dracula"></div>
     <footer id="footer">SESI | Direitos reservados</footer>
 </body>
 <script src="JS/menu.js"></script>
+<script src="js/Acessibilidade.js"></script>
 </html>

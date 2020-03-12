@@ -11,7 +11,7 @@
 .btn-container{
     position: absolute;
     top: 5em;
-    margin-left: 35em;
+    margin-left: 50em;
     color: white;
 }
 
@@ -27,6 +27,7 @@
 .contraste{
     font-weight: bold;
     margin-right: 0.5em;
+    margin-left: 15em;
 }
 
 .contraste-normal{
@@ -49,4 +50,28 @@ a{
     color: white;
     text-decoration: none;
     cursor: pointer;
+}
+
+#link{
+    position: absolute;
+    top: 5em;
+    margin-left: 13em;
+}
+
+#link-2{
+    position: absolute;
+    top: 5em;
+    margin-left: 24em;
+}
+
+#link-3{
+    position: absolute;
+    top: 5em;
+    margin-left: 60em;
+}
+
+#link-4{
+    position: absolute;
+    top: 5em;
+    margin-left: 75em;
 }
