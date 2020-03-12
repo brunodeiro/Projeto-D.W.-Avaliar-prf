@@ -68,7 +68,7 @@ var btnNome = document.createElement("button") //SIMULAR PESQUISA DA MATERIA (PR
     btnNome.setAttribute("onclick", "pesquisar()")
     divNome.appendChild(btnNome)
 
-    var divImg = document.createElement("div") //SETAR ATRIBUTO DE IMAGEM PARA QUE AO PESQUISAR (PROGRAMAÇÃO WEB NO [btnNome]) APAREÇA A FOTO
+var divImg = document.createElement("div") //SETAR ATRIBUTO DE IMAGEM PARA QUE AO PESQUISAR (PROGRAMAÇÃO WEB NO [btnNome]) APAREÇA A FOTO
     divImg.id = "divImg"
     divFormEl.appendChild(divImg)
 
@@ -89,6 +89,17 @@ var imgM2 = document.createElement("img")
     imgM2.setAttribute("width", "60px")
     imgM2.setAttribute("height", "75px")
     divImg2.appendChild(imgM2)
+
+var divImg3 = document.createElement("div") 
+    divImg3.id = "divImg3"
+    divFormEl.appendChild(divImg3)
+
+var imgM3 = document.createElement("img")
+    imgM3.id="imgM3"
+    imgM3.src="IMG/avatar-icon.png"
+    imgM3.setAttribute("width", "60px")
+    imgM3.setAttribute("height", "75px")
+    divImg.appendChild(imgM3)    
 
 var divComent = document.createElement("div")
     divComent.id="divComent"
