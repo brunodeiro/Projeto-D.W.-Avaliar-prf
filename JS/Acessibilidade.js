@@ -3,19 +3,23 @@ window.onload = function() {
     let botaoAumentar = document.getElementById('aumentar');
     let botaoDiminuir = document.getElementById('diminuir');
 
-    //Fonte notmal do body
+    //Fonte normal do body
     let fontSize = 100;
 
-    let aumentarDiminuir = 10;
+    let aumentarDiminuir = 15;
 
     botaoAumentar.addEventListener('click', function(event) {
-        fontSize += aumentarDiminuir;
-        bodyEl.style.fontSize = fontSize + '%';
+        if(fontSize<115){
+            fontSize += aumentarDiminuir;
+            bodyEl.style.fontSize = fontSize + '%';
+        }
     });
 
     botaoDiminuir.addEventListener('click', function(event) {
-        fontSize -= aumentarDiminuir;
-        bodyEl.style.fontSize = fontSize + '%';
+        if(fontSize>100){
+            fontSize -= aumentarDiminuir;
+            bodyEl.style.fontSize = fontSize + '%';
+        }
     });
 }
 
