@@ -170,7 +170,7 @@ function branco(){
     let bodyEl = document.querySelector('body')
     let titulo2 = document.getElementById('titulo')
     if(img2){
-        // titulo2.style.color = 'black'  //O Erro
+        // titulo2.style.color = 'black'  // O Erro
         bodyEl.className = 'fundo'
     }
 }
