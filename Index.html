@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <title>login</title>
     <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <link rel="stylesheet" href="CSS/Acessibilidade.css">
 </head>
-<body>
-    <header id="header"></header>
+<body >
+    <header id="header">
+        <div id="link-3">
+            <a href="ajuda.html">Ajuda Acessibilidade[3]</a>
+        </div>
+        <div class="btn-container">
+            <label class='fonte' for="">Fonte:</label>
+            <button  id="aumentar" title="Aumentar fonte">A+</button>
+            <button  id="diminuir" title="Diminuir fonte">A-</button>
+        </div>
+        <div id="contraste">    
+            <label class='contraste' for="" >Contraste:</label>
+            <a>
+                <img class='contraste-normal' onclick="branco()" name = 'normal' src="http://www.luizacaspary.com.br/imagens/contraste_normal.png">
+                <img class='alto-contraste' onclick="escuro()" name='alto' src="http://www.luizacaspary.com.br/imagens/alto_contraste.png">
+            </a>
+        </div>
+    </header>
     <div id="dracula"></div>
     <footer id="footer">SESI | Direitos reservados</footer>
 </body>
