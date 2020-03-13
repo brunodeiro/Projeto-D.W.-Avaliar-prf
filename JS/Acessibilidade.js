@@ -43,6 +43,10 @@ function branco(){
     }
 }
 
+function voltar(){
+    window.history.back();
+}
+
    
 
 

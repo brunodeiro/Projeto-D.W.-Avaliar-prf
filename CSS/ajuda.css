@@ -77,10 +77,12 @@ h2{
 }
 
 #contraste{
-    position: absolute;
-    top: 5em;
-    margin-left: 27em;
+    position: relative;
+    top: 3.7em;
+    width: 100px;
+    margin-left: auto;
     color: white;
+    margin-right: auto;
 }
 
 .fonte{font-weight: bold;}
@@ -88,7 +90,6 @@ h2{
 .contraste{
     font-weight: bold;
     margin-right: 0.5em;
-    margin-left: 10em;
 }
 
 .contraste-normal{
@@ -116,16 +117,16 @@ a{
 #link{
     position: absolute;
     top: 5em;
-    margin-left: 17em;
+    margin-left: 15em;
 }
 
-/* #link-2{
+#link-2{
     position: absolute;
     top: 5em;
-    margin-left: 27em;
+    margin-left: 25em;
 }
 
-#link-3{
+/* #link-3{
     position: absolute;
     top: 5em;
     margin-left: 60em;
@@ -135,5 +136,5 @@ a{
     position: absolute;
     top: 5em;
     margin-left: 75em;
-} */
-
+}
+ */
