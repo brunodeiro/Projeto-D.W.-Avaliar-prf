@@ -1,6 +1,7 @@
 var header = document.getElementById("header")
 var menu = document.getElementById("dracula")
 var footer = document.getElementById("footer")
+var menuM = document.getElementById ("formM")
 
 var divHeaderEl = document.createElement("div")
     divHeaderEl.id="DivHeader"
@@ -79,6 +80,7 @@ var imgM = document.createElement("img")
     imgM.setAttribute("height", "75px")
     divImg.appendChild(imgM)
 
+
 var divImg2 = document.createElement("div")
     divImg2.id = "divImg2"    
     divFormEl.appendChild(divImg2)
@@ -88,18 +90,8 @@ var imgM2 = document.createElement("img")
     imgM2.src = "IMG/avatar-icon.png"
     imgM2.setAttribute("width", "60px")
     imgM2.setAttribute("height", "75px")
-    divImg2.appendChild(imgM2)
-
-var divImg3 = document.createElement("div") 
-    divImg3.id = "divImg3"
-    divFormEl.appendChild(divImg3)
-
-var imgM3 = document.createElement("img")
-    imgM3.id="imgM3"
-    imgM3.src="IMG/avatar-icon.png"
-    imgM3.setAttribute("width", "60px")
-    imgM3.setAttribute("height", "75px")
-    divImg.appendChild(imgM3)    
+    divImg2.appendChild(imgM2) 
+    
 
 var divComent = document.createElement("div")
     divComent.id="divComent"
@@ -234,7 +226,7 @@ function materia(){
 
 function pesquisar(){
     if (inputNome.value){
-        alert("Simulação de busca de Professor!")
+        alert("Simulação de busca por Materia!")
         inputRadio1.disabled=false
         inputRadio2.disabled=false
         inputRadio3.disabled=false
@@ -265,7 +257,7 @@ function enviar(){
     if(inputNome.value && txtArea.value && valor>=1 && (inputRadio1.checked || inputRadio2.checked || inputRadio3.checked) ){ 
         var confirmar = confirm("Deseja enviar sua avaliação ?")
         if(confirmar==true){
-            window.location.href="comentarios.html"
+            window.location.href="index.html"
         }
     }
     else{
@@ -363,3 +355,4 @@ function avaliar5(){
         imgStar5.src="IMG/star0.png"
     }
 }
+
