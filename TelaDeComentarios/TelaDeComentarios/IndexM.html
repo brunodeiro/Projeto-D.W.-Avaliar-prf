@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>AvaliarDocente</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css"/>
+    <script src="JS/script.js"></script>
+</head>
+<body>
+    <header id="header"></header>
+    <div id="texto" align="center">
+        <h2>Avaliar Materia</h2>
+        <hr width="25%" id="linha">
+    </div>
+    
+    <div name="Filter"> 
+        <form id="divForm">
+            <div id="barra">
+                <label for ="prof">Filtrar por: </label> 
+                <button type="submit" id="prof" formaction="IndexProf.html">Professor</button>
+                <button type="submit" id="mat"formaction="IndexMat.html">Materia</button>
+                <label for="pior">Avaliações: </label> 
+                <button type="submit" id="melh">Melhor</button>
+                <button type="submit" id="pior"formaction="indexP.html">Pior</button>
+                <input type="text" id="inputP" placeholder="Pesquisar...">                                            
+            </div>
+
+            <hr width="95%" id="linha">
+
+            <div id=com1>
+                <label id="user"> >Ciclano< </label>
+                <label name="nomeProf" id="nomeProf"> Professor: David </label>
+                <label name="nomeMat" id="nomeMat">Materia: Programação Web</label>
+                <a href="javascript:void(0)" onclick="Avaliar(1)">
+                <img src="img/star1.png" id="s1"></a>
+
+                <a href="javascript:void(0)" onclick="Avaliar(2)">
+                <img src="img/star1.png" id="s2"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(3)">
+                <img src="img/star1.png" id="s3"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(4)">
+                <img src="img/star1.png" id="s4"></a>
+                
+                <a href="javascript:void(0)" onclick="Avaliar(5)">
+                <img src="img/star1.png" id="s5"></a> 
+
+                <textarea id="comenText" rows="4" cols="100" name="comment" placeholder="Otima metodologia de ensino. Excelente professor!"></textarea> 
+            </div>
+
+            <div id=com2>
+                <label id="user2"> >Anonimos24< </label>
+                <label name="nomeProf2" id="nomeProf2"> Professor: David </label>
+                <label name="nomeMat2" id="nomeMat2">Materia: Interface Homem Maquina</label>
+                <a href="javascript:void(0)" onclick="Avaliar(1)">
+                    <img src="img/star1.png" id="s1"></a>
+    
+                    <a href="javascript:void(0)" onclick="Avaliar(2)">
+                    <img src="img/star1.png" id="s2"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(3)">
+                    <img src="img/star1.png" id="s3"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(4)">
+                    <img src="img/star0.png" id="s4"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(5)">
+                    <img src="img/star0.png" id="s5"></a> 
+                <textarea id="comenText2" rows="4" cols="100" name="comment2" placeholder="Otima metodologia de ensino. Excelente professor!"></textarea> 
+            </div>
+
+            <div id=com3>
+                <label id="user3"> >Mariazinha< </label>
+                <label name="nomeProf3" id="nomeProf3"> Professor: David </label>
+                <label name="nomeMat3" id="nomeMat3">Materia: Informatica Aplicada</label>
+                <a href="javascript:void(0)" onclick="Avaliar(1)">
+                    <img src="img/star1.png" id="s1"></a>
+    
+                    <a href="javascript:void(0)" onclick="Avaliar(2)">
+                    <img src="img/star1.png" id="s2"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(3)">
+                    <img src="img/star1.png" id="s3"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(4)">
+                    <img src="img/star1.png" id="s4"></a>
+                    
+                    <a href="javascript:void(0)" onclick="Avaliar(5)">
+                    <img src="img/star0.png" id="s5"></a>
+                <textarea id="comenText3" rows="4" cols="100" name="comment3" placeholder="Otima metodologia de ensino. Excelente professor!"></textarea> 
+            </div>
+            <button type="submit" formaction="menu.html" id="inic">Menu</button>
+        </form>
+                    
+    </div>
+
+        <div id="dracula"></div>
+    <footer id="footer">SESI | Direitos reservados</footer>
+</body>
+
+</html>
