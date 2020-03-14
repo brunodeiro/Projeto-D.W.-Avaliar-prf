@@ -257,7 +257,7 @@ function enviar(){
     if(inputNome.value && txtArea.value && valor>=1){ 
         var confirmar = confirm("Deseja enviar sua avaliação ?")
         if(confirmar==true){
-            window.location.href="index.html"
+            window.location.href="comentarios.html"
         }
     }
     else{
