@@ -254,7 +254,7 @@ var materias=document.createElement("p")
 
 
 function enviar(){
-    if(inputNome.value && txtArea.value && valor>=1 && (inputRadio1.checked || inputRadio2.checked || inputRadio3.checked) ){ 
+    if(inputNome.value && txtArea.value && valor>=1){ 
         var confirmar = confirm("Deseja enviar sua avaliação ?")
         if(confirmar==true){
             window.location.href="index.html"
