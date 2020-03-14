@@ -35,17 +35,17 @@ var divBtn = document.createElement("div")
     divBtn.id="divBtn"
     divFiltro.appendChild(divBtn)
 
-var avaliarP = document.createElement("button") //DIRECIONAR PARA A PAGINA AVALIARP.HTML
+    var avaliarP = document.createElement("button") //DEIXAR ESTE SELECIONADO
     avaliarP.id="avaliarP"
-    avaliarP.innerText="Professor"
-    avaliarP.setAttribute("onclick", "Professor()")
+    avaliarP.innerText="Matéria"
+    avaliarP.disabled = true
     divBtn.appendChild(avaliarP)
 
-var avaliarM = document.createElement("button") //DEIXAR ESTE SELECIONADO
+var avaliarM = document.createElement("button") //DIRECIONAR PARA A PAGINA AVALIARM.HTML
     avaliarM.id="avaliarM"
-    avaliarM.innerText="Matéria"
-    avaliarM.disabled = true
-    divBtn.appendChild(avaliarM)    
+    avaliarM.innerText="Professor"
+    avaliarM.setAttribute("onclick", "materia()")
+    divBtn.appendChild(avaliarM)  
 
 var divNome = document.createElement("div")
     divNome.id="divNome"
@@ -221,7 +221,7 @@ var enviarEl = document.createElement("button")
     divBts.appendChild(enviarEl)
 
 function materia(){
-    window.location.href="avaliarm.html" 
+    window.location.href="avaliarp.html" 
 }
 
 function pesquisar(){
