@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <title>AvaliarDocente</title>
     <link rel="stylesheet" type="text/css" href="CSS/style2.css"/>
+    <link rel="stylesheet" href="CSS/Acessibilidade.css">
 </head>
 <body>
-    <header id="header"></header>
+    <header id="header">
+        <div id="img">
+            <img id='img' src="IMG/sesi-logo-1.png">
+        </div>
+        <div id="link">
+            <a href="Index.html">Ir Para Login[1]</a>
+        </div>
+            <div class="btn-container">
+                <label class='fonte' for="">Fonte:</label>
+                <button  id="aumentar" title="Aumentar fonte">A+</button>
+                <button  id="diminuir" title="Diminuir fonte">A-</button>
+            </div>
+            <div id="contraste">    
+                <label class='contraste' for="" >Contraste:</label>
+                <a>
+                    <img class='contraste-normal' onclick="branco()" name = 'normal' src="http://www.luizacaspary.com.br/imagens/contraste_normal.png">
+                    <img class='alto-contraste' onclick="escuro()" name='alto' src="http://www.luizacaspary.com.br/imagens/alto_contraste.png">
+                </a>
+            </div>
+            <div id="link-3">
+                <a href="ajuda.html">Ajuda Acessibilidade[2]</a>
+            </div>
+    </header>
     <div id="texto" align="center">
-        <h2>Avaliar Materia</h2>
+        <h2 id="titulo">Avaliar Materia</h2>
         <hr width="25%" id="linha">
     </div>
     
@@ -98,4 +121,5 @@
     <footer id="footer">SESI | Direitos reservados</footer>
 </body>
 <script src="../AvaliarMt/JS/script.js"></script>
+<script src="JS/Acessibilidade.js"></script>
 </html>
